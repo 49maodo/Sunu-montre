@@ -112,7 +112,7 @@
                 <div class="flex flex-col items-start gap-4 lg:gap-6 self-stretch w-full">
                     <h1
                         class="self-stretch font-playfair font-extrabold text-white text-2xl sm:text-3xl lg:text-5xl text-center leading-tight lg:leading-normal">
-                        Bienvenue sur Univers des Montres
+                        Bienvenue sur Univers des Montres test
                     </h1>
                     <p
                         class="self-stretch font-montserrat font-normal text-gray-400 text-base sm:text-lg lg:text-xl text-center leading-relaxed px-4 sm:px-0">
@@ -133,6 +133,56 @@
             </div>
         </div>
     </section>
+
+
+    <div class="w-full px-16 py-28 bg-saumon-50 inline-flex flex-col justify-start items-center gap-20 overflow-hidden">
+        <div class="w-full max-w-[1280px] flex flex-col justify-start items-center gap-20">
+            <div class="w-full max-w-[768px] flex flex-col justify-start items-center gap-6">
+                <div class="self-stretch text-center justify-start text-Color-Scheme-1-Text text-5xl
+                     font-bold font-['Roboto'] leading-[57.60px]">
+                    Découvrez nos montres
+                </div>
+                <div class="self-stretch text-center justify-start text-gray-500
+                    font-wight-400 font-montserrat color-gray-600 leading-[13px]">
+                    Explorez notre collection de montres raffinées, conçues pour sublimer chaque instant.
+                </div>
+            </div>
+            <div class="self-stretch relative flex flex-col justify-start items-start gap-12">
+                <div id="gallery" class="size- inline-flex justify-start items-center gap-8">
+                    <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] 
+                    md:h-[360px] lg:h-[405px] object-cover flex-shrink-0" src="images/carrousel-1/image1.jpg" />
+                    <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                    lg:h-[405px] object-cover flex-shrink-0" src="images/carrousel-1/image2.jpg" />
+                    <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                    lg:h-[405px] object-cover flex-shrink-0" src="images/carrousel-1/image3.jpg" />
+                    <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                    lg:h-[405px] object-cover flex-shrink-0" src="images/carrousel-1/image4.jpg" />
+                    <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                    lg:h-[405px] object-cover flex-shrink-0" src="https://placehold.co/405x405?text=5" />
+                    <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                    lg:h-[405px] object-cover flex-shrink-0" src="https://placehold.co/405x405?text=6" />
+                    <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                    lg:h-[405px] object-cover flex-shrink-0" src="https://placehold.co/405x405?text=7" />
+                    <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                    lg:h-[405px] object-cover flex-shrink-0" src="https://placehold.co/405x405?text=8" />
+                    <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                    lg:h-[405px] object-cover flex-shrink-0" src="https://placehold.co/405x405?text=9" />
+                </div>
+                <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 z-20 p-3 
+                    bg-Color-Scheme-1-Foreground rounded-full disabled:opacity-40">
+                    <i data-lucide="arrow-right" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                </button>
+
+                <!-- Bouton précédent -->
+                <button id="prevBtn" class="absolute -left-6 top-1/2 -translate-y-1/2 z-20 p-3 
+                        bg-Color-Scheme-1-Foreground rounded-full disabled:opacity-40">
+                    <i data-lucide="arrow-left" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                </button>
+                <!-- Pagination dots -->
+            </div>
+            <div id="paginationDots" class="flex gap-2 mt-6"></div>
+        </div>
+    </div>
 
 
 
@@ -231,6 +281,77 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        const gallery = document.getElementById("gallery");
+        const images = gallery.querySelectorAll("img");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const paginationDots = document.getElementById("paginationDots");
+
+        let imagesPerPage = getImagesPerPage();
+        let currentPage = 0;
+
+        function getImagesPerPage() {
+            const screenWidth = window.innerWidth;
+            if (screenWidth < 640) return 1; // Mobile
+            if (screenWidth < 1024) return 2; // Mobile & tablette
+            return 3;
+        }
+
+        function updateGallery() {
+            imagesPerPage = getImagesPerPage();
+            const imageWidth = images[0].offsetWidth + 32; // +32 pour le gap-8
+            const offset = currentPage * imagesPerPage * imageWidth;
+            gallery.style.transform = `translateX(-${offset}px)`;
+            updateDots();
+            updateButtons();
+        }
+
+        function updateDots() {
+            const totalPages = Math.ceil(images.length / imagesPerPage);
+            paginationDots.innerHTML = "";
+            for (let i = 0; i < totalPages; i++) {
+                const dot = document.createElement("div");
+                dot.className =
+                    "w-3 h-3 rounded-full cursor-pointer transition-all " +
+                    (i === currentPage ? "bg-saumon-200" : "bg-gray-400");
+                dot.addEventListener("click", () => {
+                    currentPage = i;
+                    updateGallery();
+                });
+                paginationDots.appendChild(dot);
+            }
+        }
+
+        function updateButtons() {
+            const totalPages = Math.ceil(images.length / imagesPerPage);
+            prevBtn.disabled = currentPage === 0;
+            nextBtn.disabled = currentPage >= totalPages - 1;
+        }
+
+        prevBtn.addEventListener("click", () => {
+            if (currentPage > 0) {
+                currentPage--;
+                updateGallery();
+            }
+        });
+
+        nextBtn.addEventListener("click", () => {
+            const totalPages = Math.ceil(images.length / imagesPerPage);
+            if (currentPage < totalPages - 1) {
+                currentPage++;
+                updateGallery();
+            }
+        });
+
+        window.addEventListener("resize", () => {
+            currentPage = 0; // pour revenir au début si layout change
+            updateGallery();
+        });
+
+        updateGallery();
+    </script>
+
 </body>
 
 </html>

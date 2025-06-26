@@ -5,7 +5,9 @@
   --blue-dark400: rgba(3, 30, 46, 1);
   --blue-mid-clair50: rgba(233, 247, 255, 1);
   --saumon-100: rgba(247, 169, 141, 1);
+  --saumon-200: #E46E44;
   --saumon-50: rgba(255, 244, 241, 1);
+  --Color-Scheme-1-Foreground: #FFFFFF;
 }
 
 .bg-blue-dark400 {
@@ -30,6 +32,14 @@
 
 .bg-saumon-50 {
   background-color: var(--saumon-50);
+}
+
+.bg-saumon-200 {
+  background-color: var(--saumon-200);
+}
+
+.bg-Color-Scheme-1-Foreground{
+  background: var(--Color-Scheme-1-Foreground, #FFFFFF);
 }
 
 .text-blue-dark400 {
