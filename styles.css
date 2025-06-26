@@ -1,0 +1,89 @@
+:root {
+  --blue-dark-2200: rgba(68, 180, 228, 1);
+  --blue-dark0: rgba(245, 251, 255, 1);
+  --blue-dark200: rgba(68, 166, 228, 1);
+  --blue-dark400: rgba(3, 30, 46, 1);
+  --blue-mid-clair50: rgba(233, 247, 255, 1);
+  --saumon-100: rgba(247, 169, 141, 1);
+  --saumon-50: rgba(255, 244, 241, 1);
+}
+
+.bg-blue-dark400 {
+  background-color: var(--blue-dark400);
+}
+
+.bg-blue-dark0 {
+  background-color: var(--blue-dark0);
+}
+
+.bg-blue-dark200 {
+  background-color: var(--blue-dark200);
+}
+
+.bg-blue-mid-clair50 {
+  background-color: var(--blue-mid-clair50);
+}
+
+.bg-saumon-100 {
+  background-color: var(--saumon-100);
+}
+
+.bg-saumon-50 {
+  background-color: var(--saumon-50);
+}
+
+.text-blue-dark400 {
+  color: var(--blue-dark400);
+}
+
+.text-blue-dark0 {
+  color: var(--blue-dark0);
+}
+
+.text-blue-dark200 {
+  color: var(--blue-dark200);
+}
+
+.text-saumon-100 {
+  color: var(--saumon-100);
+}
+
+.border-saumon-100 {
+  border-color: var(--saumon-100);
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-bg {
+  background: url('./public/header---103--.png') 50% 50% / cover, linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+}
+
+.team-card img:hover {
+  transform: scale(1.1);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}

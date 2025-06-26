@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univers des Montres - À Propos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Montserrat:wght@300;400;600;700&family=Roboto:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white">
+    <!-- Navbar Section -->
+    <header class="w-full bg-blue-dark400">
+        <div class="container mx-auto flex items-center justify-between py-4 lg:py-7  lg:px-12">
+            <!-- Logo -->
+            <img class="w-16 h-9 lg:w-[107px] lg:h-[60px] object-cover" alt="Univers des Montres"
+                src="/public/logo.png">
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center gap-8 ">
+                <nav class="flex gap-8">
+                    <a href="index.html"
+                        class="flex items-center gap-1 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        Accueil
+                    </a>
+                    <a href="products.html"
+                        class="flex items-center gap-1 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        Produits
+                    </a>
+                    <a href="about.html"
+                        class="flex items-center gap-1 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        À propos
+                    </a>
+                    <a href="contact.html"
+                        class="flex items-center gap-1 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        Contact
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </a>
+                </nav>
+
+                <!-- Search bar -->
+                <div class="relative">
+                    <input type="text" placeholder="Rechercher..."
+                        class="w-[250px] xl:w-[300px] h-10 lg:h-12 bg-white bg-opacity-5 rounded-full border border-white border-opacity-10 text-blue-dark0 placeholder:text-blue-dark0 placeholder:opacity-60 px-4 pr-12">
+                    <i data-lucide="search"
+                        class="absolute right-4 top-1/2 transform -translate-y-1/2 w-[14px] h-[14px] text-blue-dark0"></i>
+                </div>
+
+
+            </div>
+            <div class="flex items-center gap-4 lg:gap-8">
+                <!-- Mobile menu button -->
+                <button class="lg:hidden text-blue-dark0 p-2" onclick="toggleMobileMenu()"
+                    aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
+                    <i data-lucide="x" class="w-6 h-6 hidden" id="close-icon"></i>
+                </button>
+
+                <!-- Cart icon -->
+                <div class="flex items-center">
+                    <i data-lucide="shopping-cart"
+                        class="w-[23px] h-[26px] text-blue-dark0 hover:text-saumon-100 transition-colors cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu lg:hidden bg-blue-dark400 border-t border-white border-opacity-10" id="mobile-menu">
+            <div class="px-4 py-4 space-y-4">
+                <!-- Mobile Navigation Links -->
+                <nav class="space-y-3">
+                    <a href="index.html"
+                        class="flex items-center justify-between py-2 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        Accueil
+                    </a>
+                    <a href="products.html"
+                        class="flex items-center justify-between py-2 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        Produits
+                    </a>
+                    <a href="about.html"
+                        class="flex items-center justify-between py-2 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        À propos
+                    </a>
+                    <a href="contact.html"
+                        class="flex items-center justify-between py-2 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        Contact
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </a>
+                </nav>
+
+                <!-- Mobile Search -->
+                <div class="relative pt-2">
+                    <input type="text" placeholder="Rechercher..."
+                        class="w-full h-10 bg-white bg-opacity-5 rounded-full border border-white border-opacity-10 text-blue-dark0 placeholder:text-blue-dark0 placeholder:opacity-60 px-4 pr-12">
+                    <i data-lucide="search"
+                        class="absolute right-4 top-1/2 transform -translate-y-1/2 w-[14px] h-[14px] text-blue-dark0"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="relative w-full h-[60vh] sm:h-[70vh] lg:h-[920px] flex flex-col items-center justify-center gap-8 lg:gap-20 px-4 sm:px-8 lg:px-16 py-0 bg-[url(/public/about/1.jpg)] bg-cover bg-center">
+        <div class="flex flex-col max-w-screen-xl items-center gap-8 lg:gap-20 relative w-full">
+            <div class="flex flex-col max-w-screen-md items-center w-full gap-6 lg:gap-8">
+                <div class="flex flex-col items-start gap-4 lg:gap-6 self-stretch w-full">
+                    <h1
+                        class="self-stretch font-playfair font-extrabold text-white text-2xl sm:text-3xl lg:text-5xl text-center leading-tight lg:leading-normal">
+                        Bienvenue sur Univers des Montres
+                    </h1>
+                    <p
+                        class="self-stretch font-montserrat font-normal text-gray-400 text-base sm:text-lg lg:text-xl text-center leading-relaxed px-4 sm:px-0">
+                        Connectez-vous ou créez un compte pour profiter des offres exclusives et suivre vos commandes.
+                    </p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
+                    <button
+                        class="w-full sm:w-auto px-6 py-3 bg-saumon-100 rounded-[13px] hover:bg-opacity-90 transition-colors font-montserrat font-light text-blue-dark400">
+                        Inscription
+                    </button>
+                    <button
+                        class="w-full sm:w-auto px-6 py-3 rounded-[13px] border border-saumon-100 bg-transparent hover:bg-saumon-100 hover:bg-opacity-10 transition-colors font-montserrat font-light text-white">
+                        Se connecter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="w-full bg-saumon-50 py-16 lg:py-28 relative">
+        <div class="container mx-auto px-4 sm:px-8 lg:px-16">
+            <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
+                <div class="w-full lg:flex-1 order-2 lg:order-1">
+                    <img class="w-full h-[300px] sm:h-[400px] lg:h-[690px] object-cover rounded-lg"
+                        alt="Montre élégante" src="./public/about/2.jpg">
+                </div>
+
+                <div class="w-full lg:flex-1 flex flex-col gap-6 lg:gap-8 order-1 lg:order-2">
+                    <div class="font-montserrat font-normal text-black text-base sm:text-lg lg:text-xl space-y-4">
+                        <p>Chez Univers des Montres, tout a commencé par une passion : celle du temps bien porté.</p>
+                        <p>L'idée est née dans un petit atelier, où l'élégance rencontrait la précision. Inspirés par
+                            l'allure intemporelle des grandes marques et le désir de rendre les montres de qualité
+                            accessibles à tous, nous avons décidé de créer une plateforme dédiée aux passionnés de style
+                            et d'horlogerie.</p>
+                        <p>Chaque montre que nous proposons raconte une histoire : celle du design, du détail, de l'art
+                            de vivre. Que vous soyez adepte de montres classiques, modernes ou audacieuses, Univers des
+                            Montres a été pensé pour vous offrir une expérience unique, du clic jusqu'à votre poignet.
+                        </p>
+                        <p>Aujourd'hui, nous sommes fiers de partager notre passion avec vous, en vous proposant des
+                            collections exclusives, des nouveautés régulières, et un service qui place la confiance au
+                            cœur de tout.</p>
+                        <p class="font-semibold">Bienvenue dans notre univers</p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center  ">
+                        <img class="relative w-[100px] lg:w-[140px] lg:ml-[-45px] object-contain"
+                            alt="Univers des Montres logo" src="./public/logo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Team Section -->
+    <section class="w-full py-16 lg:py-28 px-4 sm:px-8 lg:px-16 bg-white">
+        <div class="max-w-screen-xl mx-auto flex flex-col items-center gap-12 lg:gap-20">
+            <header class="max-w-screen-md w-full flex flex-col items-center gap-4">
+                <div class="w-full flex flex-col items-center gap-4 lg:gap-6">
+                    <h2
+                        class="font-playfair font-extrabold text-black text-center w-full text-2xl sm:text-3xl lg:text-4xl leading-tight">
+                        Rencontrez notre équipe
+                    </h2>
+                    <p
+                        class="font-montserrat font-light text-gray-500 text-center w-full text-sm sm:text-base px-4 sm:px-0">
+                        Découvrez les passionnés qui font vivre Univers des Montres au quotidien.
+                    </p>
+                </div>
+            </header>
+
+            <div class="w-full flex flex-col items-start gap-12 lg:gap-16">
+                <!-- First row of team members -->
+                <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="team-card flex flex-col items-center gap-4 lg:gap-6 transition-all duration-300">
+                        <div class="w-full overflow-hidden rounded-lg">
+                            <img class="w-full h-[250px] sm:h-[280px] lg:h-[296px] object-cover transition-all duration-300"
+                                alt="Sophie Diallo" src="./public/about/3.jpg">
+                        </div>
+                        <div class="flex flex-col items-center gap-3 lg:gap-4 w-full">
+                            <div class="flex flex-col items-center w-full">
+                                <h3
+                                    class="font-montserrat font-bold text-sm sm:text-base text-center text-black w-full">
+                                    Sophie Diallo</h3>
+                                <p class="font-montserrat font-normal text-black text-center w-full text-xs sm:text-sm">
+                                    Fondatrice & Directrice Générale</p>
+                            </div>
+                            <p
+                                class="font-montserrat font-light text-black text-center text-xs sm:text-sm leading-relaxed">
+                                Visionnaire et passionnée par l'horlogerie, Sophie a fondé Univers des Montres pour
+                                proposer des garde-temps élégants et accessibles à tous.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 lg:gap-3.5">
+                            <a href="#" aria-label="LinkedIn" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="linkedin" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="twitter" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Dribbble" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="dribbble" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-card flex flex-col items-center gap-4 lg:gap-6 transition-all duration-300">
+                        <div class="w-full overflow-hidden rounded-lg">
+                            <img class="w-full h-[250px] sm:h-[280px] lg:h-[296px] object-cover transition-all duration-300"
+                                alt="Amadou Ndiaye" src="./public/about/4.jpg">
+                        </div>
+                        <div class="flex flex-col items-center gap-3 lg:gap-4 w-full">
+                            <div class="flex flex-col items-center w-full">
+                                <h3
+                                    class="font-montserrat font-bold text-sm sm:text-base text-center text-black w-full">
+                                    Amadou Ndiaye</h3>
+                                <p class="font-montserrat font-normal text-black text-center w-full text-xs sm:text-sm">
+                                    Responsable Marketing Digital</p>
+                            </div>
+                            <p
+                                class="font-montserrat font-light text-black text-center text-xs sm:text-sm leading-relaxed">
+                                Créatif et stratège, Amadou conçoit toutes les campagnes qui font briller notre marque
+                                en ligne et attirent de nouveaux passionnés.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 lg:gap-3.5">
+                            <a href="#" aria-label="LinkedIn" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="linkedin" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="twitter" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Dribbble" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="dribbble" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="team-card flex flex-col items-center gap-4 lg:gap-6 transition-all duration-300">
+                        <div class="w-full overflow-hidden rounded-lg">
+                            <img class="w-full h-[250px] sm:h-[280px] lg:h-[296px] object-cover transition-all duration-300"
+                                alt="Fatou Diop" src="./public/about/5.jpg">
+                        </div>
+                        <div class="flex flex-col items-center gap-3 lg:gap-4 w-full">
+                            <div class="flex flex-col items-center w-full">
+                                <h3
+                                    class="font-montserrat font-bold text-sm sm:text-base text-center text-black w-full">
+                                    Fatou Diop</h3>
+                                <p class="font-montserrat font-normal text-black text-center w-full text-xs sm:text-sm">
+                                    Styliste Horlogère</p>
+                            </div>
+                            <p
+                                class="font-montserrat font-light text-black text-center text-xs sm:text-sm leading-relaxed">
+                                Experte en design horloger, Fatou imagine des modèles uniques qui allient tradition et
+                                modernité.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 lg:gap-3.5">
+                            <a href="#" aria-label="LinkedIn" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="linkedin" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="twitter" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Dribbble" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="dribbble" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 4 -->
+                    <div class="team-card flex flex-col items-center gap-4 lg:gap-6 transition-all duration-300">
+                        <div class="w-full overflow-hidden rounded-lg">
+                            <img class="w-full h-[250px] sm:h-[280px] lg:h-[296px] object-cover transition-all duration-300"
+                                alt="Moussa Sarr" src="./public/about/6.jpg">
+                        </div>
+                        <div class="flex flex-col items-center gap-3 lg:gap-4 w-full">
+                            <div class="flex flex-col items-center w-full">
+                                <h3
+                                    class="font-montserrat font-bold text-sm sm:text-base text-center text-black w-full">
+                                    Moussa Sarr</h3>
+                                <p class="font-montserrat font-normal text-black text-center w-full text-xs sm:text-sm">
+                                    Responsable Logistique</p>
+                            </div>
+                            <p
+                                class="font-montserrat font-light text-black text-center text-xs sm:text-sm leading-relaxed">
+                                Rigueur et efficacité sont ses maîtres-mots. Moussa veille à ce que chaque montre soit
+                                livrée rapidement et en toute sécurité.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 lg:gap-3.5">
+                            <a href="#" aria-label="LinkedIn" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="linkedin" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="twitter" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Dribbble" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="dribbble" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second row of team members -->
+                <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                    <!-- Team Member 5 -->
+                    <div class="team-card flex flex-col items-center gap-4 lg:gap-6 transition-all duration-300">
+                        <div class="w-full overflow-hidden rounded-lg">
+                            <img class="w-full h-[250px] sm:h-[280px] lg:h-[296px] object-cover transition-all duration-300"
+                                alt="Awa Ba" src="./public/about/7.jpg">
+                        </div>
+                        <div class="flex flex-col items-center gap-3 lg:gap-4 w-full">
+                            <div class="flex flex-col items-center w-full">
+                                <h3
+                                    class="font-montserrat font-bold text-sm sm:text-base text-center text-black w-full">
+                                    Awa Ba</h3>
+                                <p class="font-montserrat font-normal text-black text-center w-full text-xs sm:text-sm">
+                                    Chargée du Service Client</p>
+                            </div>
+                            <p
+                                class="font-montserrat font-light text-black text-center text-xs sm:text-sm leading-relaxed">
+                                Toujours à l'écoute, Awa accompagne nos clients avec bienveillance, du conseil à
+                                l'après-vente.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 lg:gap-3.5">
+                            <a href="#" aria-label="LinkedIn" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="linkedin" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="twitter" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Dribbble" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="dribbble" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 6 -->
+                    <div class="team-card flex flex-col items-center gap-4 lg:gap-6 transition-all duration-300">
+                        <div class="w-full overflow-hidden rounded-lg">
+                            <img class="w-full h-[250px] sm:h-[280px] lg:h-[296px] object-cover transition-all duration-300"
+                                alt="Cheikh Faye" src="./public/about/8.jpg">
+                        </div>
+                        <div class="flex flex-col items-center gap-3 lg:gap-4 w-full">
+                            <div class="flex flex-col items-center w-full">
+                                <h3
+                                    class="font-montserrat font-bold text-sm sm:text-base text-center text-black w-full">
+                                    Cheikh Faye</h3>
+                                <p class="font-montserrat font-normal text-black text-center w-full text-xs sm:text-sm">
+                                    Développeur Web & UX Designer</p>
+                            </div>
+                            <p
+                                class="font-montserrat font-light text-black text-center text-xs sm:text-sm leading-relaxed">
+                                Cheikh s'assure que votre expérience sur notre site soit fluide, agréable et sécurisée.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 lg:gap-3.5">
+                            <a href="#" aria-label="LinkedIn" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="linkedin" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="twitter" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Dribbble" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="dribbble" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 7 -->
+                    <div class="team-card flex flex-col items-center gap-4 lg:gap-6 transition-all duration-300">
+                        <div class="w-full overflow-hidden rounded-lg">
+                            <img class="w-full h-[250px] sm:h-[280px] lg:h-[296px] object-cover transition-all duration-300"
+                                alt="Marie Sy" src="./public/about/9.jpg">
+                        </div>
+                        <div class="flex flex-col items-center gap-3 lg:gap-4 w-full">
+                            <div class="flex flex-col items-center w-full">
+                                <h3
+                                    class="font-montserrat font-bold text-sm sm:text-base text-center text-black w-full">
+                                    Marie Sy</h3>
+                                <p class="font-montserrat font-normal text-black text-center w-full text-xs sm:text-sm">
+                                    Photographe & Directrice Artistique</p>
+                            </div>
+                            <p
+                                class="font-montserrat font-light text-black text-center text-xs sm:text-sm leading-relaxed">
+                                Grâce à son œil artistique, Marie sublime chaque montre à travers des visuels captivants
+                                et inspirants.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 lg:gap-3.5">
+                            <a href="#" aria-label="LinkedIn" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="linkedin" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="twitter" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Dribbble" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="dribbble" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 8 -->
+                    <div class="team-card flex flex-col items-center gap-4 lg:gap-6 transition-all duration-300">
+                        <div class="w-full overflow-hidden rounded-lg">
+                            <img class="w-full h-[250px] sm:h-[280px] lg:h-[296px] object-cover transition-all duration-300"
+                                alt="Ibrahima Kane" src="./public/about/10.jpg">
+                        </div>
+                        <div class="flex flex-col items-center gap-3 lg:gap-4 w-full">
+                            <div class="flex flex-col items-center w-full">
+                                <h3
+                                    class="font-montserrat font-bold text-sm sm:text-base text-center text-black w-full">
+                                    Ibrahima Kane</h3>
+                                <p class="font-montserrat font-normal text-black text-center w-full text-xs sm:text-sm">
+                                    Responsable des Partenariats</p>
+                            </div>
+                            <p
+                                class="font-montserrat font-light text-black text-center text-xs sm:text-sm leading-relaxed">
+                                Toujours à la recherche d'opportunités, Ibrahima développe les collaborations avec
+                                d'autres marques et boutiques pour élargir la portée de Univers des Montres.
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 lg:gap-3.5">
+                            <a href="#" aria-label="LinkedIn" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="linkedin" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="twitter" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                            <a href="#" aria-label="Dribbble" class="hover:text-blue-dark200 transition-colors">
+                                <i data-lucide="dribbble" class="w-5 h-5 lg:w-6 lg:h-6"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Header Section -->
+    <section class="w-full bg-blue-mid-clair50 py-16 lg:py-28 px-4 sm:px-8 lg:px-16">
+        <div class="max-w-screen-xl mx-auto w-full">
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-20">
+                <div class="w-full lg:flex-1">
+                    <h2
+                        class="font-playfair font-extrabold text-black text-2xl sm:text-3xl lg:text-4xl leading-tight lg:leading-normal">
+                        Nos valeurs et notre mission
+                    </h2>
+                </div>
+
+                <div class="w-full lg:flex-1">
+                    <p class="font-montserrat text-sm sm:text-base font-normal text-black leading-relaxed">
+                        Chez Univers des Montres, nous croyons en l'élégance intemporelle, en la qualité sans compromis
+                        et en un service client d'exception.
+                        <br><br>
+                        Notre mission est de vous offrir des montres soigneusement sélectionnées, alliant design raffiné
+                        et performance, tout en bâtissant une relation de confiance fondée sur la transparence, le
+                        respect et la passion de l'horlogerie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer
+        class="flex flex-col w-full items-center gap-12 lg:gap-20 px-4 sm:px-8 lg:px-16 py-16 lg:py-20 bg-gray-900 relative">
+        <div class="flex-col max-w-screen-xl items-start gap-12 lg:gap-20 flex relative w-full">
+            <div class="items-start gap-8 lg:gap-16 self-stretch w-full flex relative">
+                <div class="flex-col items-start flex-1 grow flex gap-6 lg:gap-8 relative">
+                    <img src="./public/logo.png" class="relative w-16 h-7 lg:w-[182px] lg:h-[102px] lg:ml-[-45px]"
+                        alt="Company logo">
+
+                    <div class="flex flex-col items-start gap-4 lg:gap-6 relative self-stretch w-full">
+                        <div class="flex-col items-start gap-1 self-stretch w-full flex relative">
+                            <div
+                                class="relative self-stretch font-semibold text-blue-dark200 text-sm leading-relaxed font-roboto">
+                                Address:
+                            </div>
+                            <div
+                                class="relative self-stretch font-roboto font-normal text-blue-dark0 text-sm leading-relaxed">
+                                Sicap liberté 3 ,rue 1789 avenue Dieupeul
+                            </div>
+                        </div>
+
+                        <div class="flex-col items-start gap-1 self-stretch w-full flex relative">
+                            <div
+                                class="relative self-stretch font-semibold text-blue-dark200 text-sm leading-relaxed font-roboto">
+                                Contact:
+                            </div>
+                            <div class="flex-col items-start self-stretch w-full flex relative">
+                                <a href="tel:+221777777777"
+                                    class="relative self-stretch font-roboto font-normal text-blue-dark0 text-sm leading-relaxed underline hover:text-blue-dark200 transition-colors">
+                                    +221 77 777 77 77
+                                </a>
+                                <a href="mailto:universdesmontres@gmail.com"
+                                    class="relative self-stretch font-roboto font-normal text-blue-dark0 text-sm leading-relaxed underline hover:text-blue-dark200 transition-colors">
+                                    universdesmontres@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3 items-start relative">
+                        <a href="#" aria-label="Facebook"
+                            class="text-blue-dark0 hover:text-blue-dark200 transition-colors p-1">
+                            <i data-lucide="facebook" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram"
+                            class="text-blue-dark0 hover:text-blue-dark200 transition-colors p-1">
+                            <i data-lucide="instagram" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter"
+                            class="text-blue-dark0 hover:text-blue-dark200 transition-colors p-1">
+                            <i data-lucide="twitter" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn"
+                            class="text-blue-dark0 hover:text-blue-dark200 transition-colors p-1">
+                            <i data-lucide="linkedin" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </a>
+                        <a href="#" aria-label="Youtube"
+                            class="text-blue-dark0 hover:text-blue-dark200 transition-colors p-1">
+                            <i data-lucide="youtube" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start gap-6 lg:gap-8 relative self-stretch w-full">
+                <div class="w-full h-px bg-blue-dark200 opacity-20"></div>
+
+                <div
+                    class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 relative self-stretch w-full">
+                    <div
+                        class="font-roboto font-normal text-blue-dark0 text-sm leading-relaxed text-center sm:text-left">
+                        © 2025 Univers des montres. All rights reserved.
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 relative">
+                        <a href="#"
+                            class="font-roboto font-normal text-blue-dark0 text-sm leading-relaxed underline hover:text-blue-dark200 transition-colors">
+                            Privacy Policy
+                        </a>
+                        <a href="#"
+                            class="font-roboto font-normal text-blue-dark0 text-sm leading-relaxed underline hover:text-blue-dark200 transition-colors">
+                            Terms of Service
+                        </a>
+                        <a href="#"
+                            class="font-roboto font-normal text-blue-dark0 text-sm leading-relaxed underline hover:text-blue-dark200 transition-colors">
+                            Cookies Settings
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

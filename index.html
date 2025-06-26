@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univers des Montres - À Propos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Montserrat:wght@300;400;600;700&family=Roboto:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white">
+    <!-- Navbar Section -->
+    <header class="w-full bg-blue-dark400">
+        <div class="container mx-auto flex items-center justify-between py-4 lg:py-7  lg:px-12">
+            <!-- Logo -->
+            <img class="w-16 h-9 lg:w-[107px] lg:h-[60px] object-cover" alt="Univers des Montres"
+                src="/public/logo.png">
+
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center gap-8 ">
+                <nav class="flex gap-8">
+                    <a href="index.html"
+                        class="flex items-center gap-1 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        Accueil
+                    </a>
+                    <a href="products.html"
+                        class="flex items-center gap-1 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        Produits
+                    </a>
+                    <a href="about.html"
+                        class="flex items-center gap-1 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        À propos
+                    </a>
+                    <a href="contact.html"
+                        class="flex items-center gap-1 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        Contact
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </a>
+                </nav>
+
+                <!-- Search bar -->
+                <div class="relative">
+                    <input type="text" placeholder="Rechercher..."
+                        class="w-[250px] xl:w-[300px] h-10 lg:h-12 bg-white bg-opacity-5 rounded-full border border-white border-opacity-10 text-blue-dark0 placeholder:text-blue-dark0 placeholder:opacity-60 px-4 pr-12">
+                    <i data-lucide="search"
+                        class="absolute right-4 top-1/2 transform -translate-y-1/2 w-[14px] h-[14px] text-blue-dark0"></i>
+                </div>
+
+
+            </div>
+            <div class="flex items-center gap-4 lg:gap-8">
+                <!-- Mobile menu button -->
+                <button class="lg:hidden text-blue-dark0 p-2" onclick="toggleMobileMenu()"
+                    aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
+                    <i data-lucide="x" class="w-6 h-6 hidden" id="close-icon"></i>
+                </button>
+
+                <!-- Cart icon -->
+                <div class="flex items-center">
+                    <i data-lucide="shopping-cart"
+                        class="w-[23px] h-[26px] text-blue-dark0 hover:text-saumon-100 transition-colors cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu lg:hidden bg-blue-dark400 border-t border-white border-opacity-10" id="mobile-menu">
+            <div class="px-4 py-4 space-y-4">
+                <!-- Mobile Navigation Links -->
+                <nav class="space-y-3">
+                    <a href="index.html"
+                        class="flex items-center justify-between py-2 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        Accueil
+                    </a>
+                    <a href="products.html"
+                        class="flex items-center justify-between py-2 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        Produits
+                    </a>
+                    <a href="about.html"
+                        class="flex items-center justify-between py-2 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        À propos
+                    </a>
+                    <a href="contact.html"
+                        class="flex items-center justify-between py-2 font-montserrat font-normal text-blue-dark0 text-base hover:text-saumon-100 transition-colors">
+                        Contact
+                        <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                    </a>
+                </nav>
+
+                <!-- Mobile Search -->
+                <div class="relative pt-2">
+                    <input type="text" placeholder="Rechercher..."
+                        class="w-full h-10 bg-white bg-opacity-5 rounded-full border border-white border-opacity-10 text-blue-dark0 placeholder:text-blue-dark0 placeholder:opacity-60 px-4 pr-12">
+                    <i data-lucide="search"
+                        class="absolute right-4 top-1/2 transform -translate-y-1/2 w-[14px] h-[14px] text-blue-dark0"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="relative w-full h-[60vh] sm:h-[70vh] lg:h-[920px] flex flex-col items-center justify-center gap-8 lg:gap-20 px-4 sm:px-8 lg:px-16 py-0 bg-[url(/public/about/1.jpg)] bg-cover bg-center">
+        <div class="flex flex-col max-w-screen-xl items-center gap-8 lg:gap-20 relative w-full">
+            <div class="flex flex-col max-w-screen-md items-center w-full gap-6 lg:gap-8">
+                <div class="flex flex-col items-start gap-4 lg:gap-6 self-stretch w-full">
+                    <h1
+                        class="self-stretch font-playfair font-extrabold text-white text-2xl sm:text-3xl lg:text-5xl text-center leading-tight lg:leading-normal">
+                        Bienvenue sur Univers des Montres
+                    </h1>
+                    <p
+                        class="self-stretch font-montserrat font-normal text-gray-400 text-base sm:text-lg lg:text-xl text-center leading-relaxed px-4 sm:px-0">
+                        Connectez-vous ou créez un compte pour profiter des offres exclusives et suivre vos commandes.
+                    </p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
+                    <button
+                        class="w-full sm:w-auto px-6 py-3 bg-saumon-100 rounded-[13px] hover:bg-opacity-90 transition-colors font-montserrat font-light text-blue-dark400">
+                        Inscription
+                    </button>
+                    <button
+                        class="w-full sm:w-auto px-6 py-3 rounded-[13px] border border-saumon-100 bg-transparent hover:bg-saumon-100 hover:bg-opacity-10 transition-colors font-montserrat font-light text-white">
+                        Se connecter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer
+        class="flex flex-col w-full items-center gap-12 lg:gap-20 px-4 sm:px-8 lg:px-16 py-16 lg:py-20 bg-gray-900 relative">
+        <div class="flex-col max-w-screen-xl items-start gap-12 lg:gap-20 flex relative w-full">
+            <div class="items-start gap-8 lg:gap-16 self-stretch w-full flex relative">
+                <div class="flex-col items-start flex-1 grow flex gap-6 lg:gap-8 relative">
+                    <img src="./public/logo.png" class="relative w-16 h-7 lg:w-[182px] lg:h-[102px] lg:ml-[-45px]"
+                        alt="Company logo">
+
+                    <div class="flex flex-col items-start gap-4 lg:gap-6 relative self-stretch w-full">
+                        <div class="flex-col items-start gap-1 self-stretch w-full flex relative">
+                            <div
+                                class="relative self-stretch font-semibold text-blue-dark200 text-sm leading-relaxed font-roboto">
+                                Address:
+                            </div>
+                            <div
+                                class="relative self-stretch font-roboto font-normal text-blue-dark0 text-sm leading-relaxed">
+                                Sicap liberté 3 ,rue 1789 avenue Dieupeul
+                            </div>
+                        </div>
+
+                        <div class="flex-col items-start gap-1 self-stretch w-full flex relative">
+                            <div
+                                class="relative self-stretch font-semibold text-blue-dark200 text-sm leading-relaxed font-roboto">
+                                Contact:
+                            </div>
+                            <div class="flex-col items-start self-stretch w-full flex relative">
+                                <a href="tel:+221777777777"
+                                    class="relative self-stretch font-roboto font-normal text-blue-dark0 text-sm leading-relaxed underline hover:text-blue-dark200 transition-colors">
+                                    +221 77 777 77 77
+                                </a>
+                                <a href="mailto:universdesmontres@gmail.com"
+                                    class="relative self-stretch font-roboto font-normal text-blue-dark0 text-sm leading-relaxed underline hover:text-blue-dark200 transition-colors">
+                                    universdesmontres@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3 items-start relative">
+                        <a href="#" aria-label="Facebook"
+                            class="text-blue-dark0 hover:text-blue-dark200 transition-colors p-1">
+                            <i data-lucide="facebook" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram"
+                            class="text-blue-dark0 hover:text-blue-dark200 transition-colors p-1">
+                            <i data-lucide="instagram" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter"
+                            class="text-blue-dark0 hover:text-blue-dark200 transition-colors p-1">
+                            <i data-lucide="twitter" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn"
+                            class="text-blue-dark0 hover:text-blue-dark200 transition-colors p-1">
+                            <i data-lucide="linkedin" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </a>
+                        <a href="#" aria-label="Youtube"
+                            class="text-blue-dark0 hover:text-blue-dark200 transition-colors p-1">
+                            <i data-lucide="youtube" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start gap-6 lg:gap-8 relative self-stretch w-full">
+                <div class="w-full h-px bg-blue-dark200 opacity-20"></div>
+
+                <div
+                    class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 relative self-stretch w-full">
+                    <div
+                        class="font-roboto font-normal text-blue-dark0 text-sm leading-relaxed text-center sm:text-left">
+                        © 2025 Univers des montres. All rights reserved.
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-6 relative">
+                        <a href="#"
+                            class="font-roboto font-normal text-blue-dark0 text-sm leading-relaxed underline hover:text-blue-dark200 transition-colors">
+                            Privacy Policy
+                        </a>
+                        <a href="#"
+                            class="font-roboto font-normal text-blue-dark0 text-sm leading-relaxed underline hover:text-blue-dark200 transition-colors">
+                            Terms of Service
+                        </a>
+                        <a href="#"
+                            class="font-roboto font-normal text-blue-dark0 text-sm leading-relaxed underline hover:text-blue-dark200 transition-colors">
+                            Cookies Settings
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
