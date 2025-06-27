@@ -105,34 +105,496 @@
     </header>
 
     <!-- Hero Section -->
-    <section
-        class="relative w-full h-[60vh] sm:h-[70vh] lg:h-[920px] flex flex-col items-center justify-center gap-8 lg:gap-20 px-4 sm:px-8 lg:px-16 py-0 bg-[url(/images/about/1.jpg)] bg-cover bg-center">
+    <section class="relative w-full h-[60vh] sm:h-[70vh] lg:h-[920px] flex flex-col items-center 
+        justify-center gap-8 lg:gap-20 px-4 sm:px-8 lg:px-16 py-0 bg-[url(/images/homepage.jpg)] bg-cover bg-center">
         <div class="flex flex-col max-w-screen-xl items-center gap-8 lg:gap-20 relative w-full">
             <div class="flex flex-col max-w-screen-md items-center w-full gap-6 lg:gap-8">
                 <div class="flex flex-col items-start gap-4 lg:gap-6 self-stretch w-full">
-                    <h1
-                        class="self-stretch font-playfair font-extrabold text-white text-2xl sm:text-3xl lg:text-5xl text-center leading-tight lg:leading-normal">
-                        Bienvenue sur Univers des Montres
+                    <h1 class="self-stretch font-playfair font-extrabold text-white text-3xl 
+                        sm:text-3xl lg:text-5xl text-center leading-tight lg:leading-normal">
+                        Exprimez votre style, seconde après seconde
                     </h1>
-                    <p
-                        class="self-stretch font-montserrat font-normal text-gray-400 text-base sm:text-lg lg:text-xl text-center leading-relaxed px-4 sm:px-0">
-                        Connectez-vous ou créez un compte pour profiter des offres exclusives et suivre vos commandes.
+                    <p class="self-stretch font-montserrat font-normal text-gray-400 
+                        text-base sm:text-lg lg:text-xl text-center leading-relaxed px-4 sm:px-0">
+                        Des montres tendance et originales pour affirmer votre personnalité.
                     </p>
                 </div>
 
                 <div class="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
-                    <button
-                        class="w-full sm:w-auto px-6 py-3 bg-saumon-100 rounded-[13px] hover:bg-opacity-90 transition-colors font-montserrat font-light text-blue-dark400">
+                    <button class="w-full sm:w-auto px-6 py-3 bg-saumon-100 rounded-[13px] hover:bg-opacity-90 
+                        transition-colors font-montserrat font-light text-blue-dark400">
                         Inscription
                     </button>
                     <button
-                        class="w-full sm:w-auto px-6 py-3 rounded-[13px] border border-saumon-100 bg-transparent hover:bg-saumon-100 hover:bg-opacity-10 transition-colors font-montserrat font-light text-white">
+                        class="w-full sm:w-auto px-6 py-3 rounded-[13px] border border-saumon-100 
+                        bg-transparent hover:bg-saumon-100 hover:bg-opacity-10 transition-colors font-montserrat font-light text-white">
                         Se connecter
                     </button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Carrousel 1 section -->
+    <section>
+        <div
+            class="w-full sm:px-16 py-28 bg-saumon-50 inline-flex flex-col justify-start items-center gap-20 overflow-hidden">
+            <div class="w-full max-w-[1280px] flex flex-col justify-start items-center gap-20">
+                <div class="w-full max-w-[768px] flex flex-col justify-start items-center gap-6">
+                    <div class="self-stretch text-center justify-start text-Color-Scheme-1-Text text-5xl
+                        font-bold font-['Roboto'] leading-[57.60px]">
+                        Découvrez nos montres
+                    </div>
+                    <div class="self-stretch text-center justify-start text-gray-500
+                                font-wight-400 font-montserrat color-gray-600 leading-[13px]">
+                        Explorez notre collection de montres raffinées, conçues pour sublimer chaque instant.
+                    </div>
+                </div>
+                <div class="self-stretch bg-white w-full flex flex-col justify-center gap-12 carousel"
+                    data-carousel="carousel-1" data-perpage="3">
+                    <div class="relative w-full ">
+                        <div id="gallery" data-gallery
+                            class="gallery size- inline-flex justify-start items-center gap-8">
+                            <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] 
+                                md:h-[360px] lg:h-[405px] object-cover flex-shrink-0"
+                                src="images/carrousel-1/image1.jpg" />
+                            <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                                lg:h-[405px] object-cover flex-shrink-0" src="images/carrousel-1/image2.jpg" />
+                            <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                                lg:h-[405px] object-cover flex-shrink-0" src="images/carrousel-1/image3.jpg" />
+                            <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                                lg:h-[405px] object-cover flex-shrink-0" src="images/carrousel-1/image4.jpg" />
+                            <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                                lg:h-[405px] object-cover flex-shrink-0" src="https://placehold.co/405x405?text=5" />
+                            <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                                lg:h-[405px] object-cover flex-shrink-0" src="https://placehold.co/405x405?text=6" />
+                            <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                                lg:h-[405px] object-cover flex-shrink-0" src="https://placehold.co/405x405?text=7" />
+                            <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                                lg:h-[405px] object-cover flex-shrink-0" src="https://placehold.co/405x405?text=8" />
+                            <img class="w-[280px] sm:w-[320px] md:w-[360px] lg:w-[405px] h-[280px] sm:h-[320px] md:h-[360px] 
+                                lg:h-[405px] object-cover flex-shrink-0" src="https://placehold.co/405x405?text=9" />
+                        </div>
+                        <button id="nextBtn" data-next class="absolute right-2 top-1/2 -translate-y-1/2 z-20 p-3 
+                                bg-Color-Scheme-1-Foreground rounded-full disabled:opacity-40">
+                            <i data-lucide="arrow-right" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </button>
+
+                        <!-- Bouton précédent -->
+                        <button id="prevBtn" data-prev class="absolute left-2 top-1/2 -translate-y-1/2 z-20 p-3 
+                                    bg-Color-Scheme-1-Foreground rounded-full disabled:opacity-40">
+                            <i data-lucide="arrow-left" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </button>
+                    </div>
+                    <!-- Pagination dots -->
+                    <div id="paginationDots" data-dots class="flex justify-center gap-2 mt-6 mb-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrousel 2 section -->
+    <section class="w-full py-28 inline-flex flex-col justify-start items-center gap-20 overflow-hidden bg-[#010c13]">
+        <div class="max-w-screen-xl px-2 w-full mx-auto flex flex-col items-center gap-20">
+
+            <!-- Titre & description -->
+            <div class="text-center">
+                <h2 class="text-[#f5fbff] text-3xl sm:text-4xl lg:text-5xl font-bold font-['Playfair_Display']">
+                    Offres spéciales
+                </h2>
+                <p class="text-[#a2a2a2] text-base sm:text-lg font-normal font-['Roboto'] mt-4">
+                    Pendant une durée limitée, profitez d'une réduction exclusive sur nos montres haut de gamme.
+                </p>
+            </div>
+
+            <!-- Carrousel -->
+            <div class="w-full carousel relative" data-carousel data-perpage="4">
+                <div data-gallery class="flex gap-8 transition-transform duration-300 ease-in-out">
+                    <!-- Carte produit -->
+                    <div class="flex-none w-[280px] sm:w-1/2 lg:w-[304px] h-auto  flex flex-col items-start gap-4">
+                        <img src="images/carrousel-2/image1.jpg" height="600"
+                            class="w-full h-[350px] object-cover rounded" />
+                        <div class="w-full flex flex-col gap-2 text-white">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-lg">Falkor</span>
+                                <div class="flex gap-2 text-sm">
+                                    <span class="text-white font-semibold">10000XOF</span>
+                                    <span class="text-white/40 line-through decoration-[#f7a98d]">20000XOF</span>
+                                </div>
+                            </div>
+                            <button class="w-full text-center py-2 text-sm text-[#fff4f1] 
+                                outline outline-1 outline-[#f7a98d] font-light font-['Montserrat']">
+                                Acheter
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex-none w-[280px] sm:w-1/2 lg:w-[304px] h-auto  flex flex-col items-start gap-4">
+                        <img src="images/carrousel-2/image2.jpg" height="600"
+                            class="w-full h-[350px] object-cover rounded" />
+                        <div class="w-full flex flex-col gap-2 text-white">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-lg">Vulcan</span>
+                                <div class="flex gap-2 text-sm">
+                                    <span class="text-white font-semibold">80000XOF</span>
+                                    <span class="text-white/40 line-through decoration-[#f7a98d]">12000XOF</span>
+                                </div>
+                            </div>
+                            <button
+                                class="w-full text-center py-2 text-sm text-[#fff4f1] outline outline-1 outline-[#f7a98d] font-light font-['Montserrat']">
+                                Acheter
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex-none w-[280px] sm:w-1/2 lg:w-[304px] h-auto  flex flex-col items-start gap-4">
+                        <img src="images/carrousel-2/image3.jpg" class="w-full h-[350px] object-cover rounded" />
+                        <div class="w-full flex flex-col gap-2 text-white">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-lg">Ferix</span>
+                                <div class="flex gap-2 text-sm">
+                                    <span class="text-white font-semibold">7000XOF</span>
+                                    <span class="text-white/40 line-through decoration-[#f7a98d]">11000XOF</span>
+                                </div>
+                            </div>
+                            <button
+                                class="w-full text-center py-2 text-sm text-[#fff4f1] outline outline-1 outline-[#f7a98d] font-light font-['Montserrat']">
+                                Acheter
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex-none w-[280px] sm:w-1/2 lg:w-[304px] h-auto  flex flex-col items-start gap-4">
+                        <img src="images/carrousel-2/image4.jpg" class="w-full h-[350px] object-cover rounded" />
+                        <div class="w-full flex flex-col gap-2 text-white">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-lg">Armani</span>
+                                <div class="flex gap-2 text-sm">
+                                    <span class="text-white font-semibold">12000XOF</span>
+                                    <span class="text-white/40 line-through decoration-[#f7a98d]">22000XOF</span>
+                                </div>
+                            </div>
+                            <button
+                                class="w-full text-center py-2 text-sm text-[#fff4f1] outline outline-1 outline-[#f7a98d] font-light font-['Montserrat']">
+                                Acheter
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex-none w-[280px] sm:w-1/2 lg:w-[304px] h-auto  flex flex-col items-start gap-4">
+                        <img src="images/carrousel-2/image4.jpg" class="w-full h-[350px] object-cover rounded" />
+                        <div class="w-full flex flex-col gap-2 text-white">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-lg">Ferat</span>
+                                <div class="flex gap-2 text-sm">
+                                    <span class="text-white font-semibold">7000XOF</span>
+                                    <span class="text-white/40 line-through decoration-[#f7a98d]">11000XOF</span>
+                                </div>
+                            </div>
+                            <button
+                                class="w-full text-center py-2 text-sm text-[#fff4f1] outline outline-1 outline-[#f7a98d] font-light font-['Montserrat']">
+                                Acheter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10"></div>
+                <div class="w-full flex flex-1 justify-between items-center">
+                    <!-- Pagination dots -->
+                    <div id="paginationDots" data-dots class="flex justify-start items-start gap-2"></div>
+                    <div class="size- flex justify-start items-start gap-4 ">
+                        <button data-direction="Right" id="prevBtn" data-prev
+                            class="size- p-3 bg-white/25 rounded-[50px] outline outline-1 
+                            outline-offset-[-1px] outline-Color-Scheme-1-Border flex justify-center items-center gap-2">
+                            <i data-lucide="arrow-left" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </button>
+                        <button data-direction="Left" id="nextBtn" data-next class="size- p-3 bg-white/25 rounded-[50px] 
+                            outline outline-1 outline-offset-[-1px] outline-Color-Scheme-1-Border 
+                            flex justify-center items-center gap-2">
+                            <i data-lucide="arrow-right" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section en vedette -->
+    <section>ssss
+        <div class="w-full ">
+            <div class="container mx-auto px-4 sm:px-6 lg:px1-16 py-8 sm:py-16 lg:py-28">
+                <div class="self-stretch flex flex-cols flex-wrap justify-start items-center gap-8">
+                    <!--  -->
+                    <div class="flex-1 inline-flex flex-col justify-start items-start gap-8">
+                        <div class="self-stretch flex flex-col justify-start items-start gap-6">
+                            <div class="text-2xl sm:text-3xl lg:text-4xl xl:text-[39px]
+                                 font-black font-playfair text-primary-text leading-tight">
+                                Montres en vedette</div>
+                            <div class="size- inline-flex justify-start items-center gap-4">
+                                <div class="justify-start text-Miscellaneous-Floating-Tab---Text-Unselected 
+                                    text-2xl font-bold font-['Roboto'] leading-[33.60px]">
+                                    15000 XOF</div>
+                                <div
+                                    class="w-0 self-stretch outline outline-1 outline-offset-[-0.50px] outline-Color-Scheme-1-Border">
+                                </div>
+                                <div class="size- inline-flex flex-col justify-start items-start gap-1">
+                                    <div class="size- inline-flex justify-start items-center gap-1 overflow-hidden">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.25672 0.634407C7.53172 -0.0187615 8.46832 -0.0187606 8.74332 0.634409L10.3663 4.48953C10.4823 4.76489 10.7445 4.95303 11.0454 4.97686L15.2582 5.31053C15.9719 5.36706 16.2614 6.24705 15.7175 6.70727L12.5079 9.42349C12.2786 9.61753 12.1784 9.92198 12.2485 10.212L13.2291 14.2734C13.3952 14.9615 12.6375 15.5054 12.0264 15.1367L8.41965 12.9602C8.16202 12.8047 7.83802 12.8047 7.5804 12.9602L3.9736 15.1367C3.3625 15.5054 2.60477 14.9615 2.77091 14.2734L3.75155 10.212C3.82159 9.92198 3.72147 9.61753 3.49221 9.42349L0.28245 6.70727C-0.261375 6.24705 0.0280544 5.36706 0.741835 5.31053L4.9547 4.97686C5.25561 4.95303 5.51774 4.76489 5.63367 4.48953L7.25672 0.634407Z"
+                                                fill="#F7D28D" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.25672 0.634407C7.53172 -0.0187615 8.46832 -0.0187606 8.74332 0.634409L10.3663 4.48953C10.4823 4.76489 10.7445 4.95303 11.0454 4.97686L15.2582 5.31053C15.9719 5.36706 16.2614 6.24705 15.7175 6.70727L12.5079 9.42349C12.2786 9.61753 12.1784 9.92198 12.2485 10.212L13.2291 14.2734C13.3952 14.9615 12.6375 15.5054 12.0264 15.1367L8.41965 12.9602C8.16202 12.8047 7.83802 12.8047 7.5804 12.9602L3.9736 15.1367C3.3625 15.5054 2.60477 14.9615 2.77091 14.2734L3.75155 10.212C3.82159 9.92198 3.72147 9.61753 3.49221 9.42349L0.28245 6.70727C-0.261375 6.24705 0.0280544 5.36706 0.741835 5.31053L4.9547 4.97686C5.25561 4.95303 5.51774 4.76489 5.63367 4.48953L7.25672 0.634407Z"
+                                                fill="#F7D28D" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.25672 0.634407C7.53172 -0.0187615 8.46832 -0.0187606 8.74332 0.634409L10.3663 4.48953C10.4823 4.76489 10.7445 4.95303 11.0454 4.97686L15.2582 5.31053C15.9719 5.36706 16.2614 6.24705 15.7175 6.70727L12.5079 9.42349C12.2786 9.61753 12.1784 9.92198 12.2485 10.212L13.2291 14.2734C13.3952 14.9615 12.6375 15.5054 12.0264 15.1367L8.41965 12.9602C8.16202 12.8047 7.83802 12.8047 7.5804 12.9602L3.9736 15.1367C3.3625 15.5054 2.60477 14.9615 2.77091 14.2734L3.75155 10.212C3.82159 9.92198 3.72147 9.61753 3.49221 9.42349L0.28245 6.70727C-0.261375 6.24705 0.0280544 5.36706 0.741835 5.31053L4.9547 4.97686C5.25561 4.95303 5.51774 4.76489 5.63367 4.48953L7.25672 0.634407Z"
+                                                fill="#F7D28D" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.25672 0.634407C7.53172 -0.0187615 8.46832 -0.0187606 8.74332 0.634409L10.3663 4.48953C10.4823 4.76489 10.7445 4.95303 11.0454 4.97686L15.2582 5.31053C15.9719 5.36706 16.2614 6.24705 15.7175 6.70727L12.5079 9.42349C12.2786 9.61753 12.1784 9.92198 12.2485 10.212L13.2291 14.2734C13.3952 14.9615 12.6375 15.5054 12.0264 15.1367L8.41965 12.9602C8.16202 12.8047 7.83802 12.8047 7.5804 12.9602L3.9736 15.1367C3.3625 15.5054 2.60477 14.9615 2.77091 14.2734L3.75155 10.212C3.82159 9.92198 3.72147 9.61753 3.49221 9.42349L0.28245 6.70727C-0.261375 6.24705 0.0280544 5.36706 0.741835 5.31053L4.9547 4.97686C5.25561 4.95303 5.51774 4.76489 5.63367 4.48953L7.25672 0.634407Z"
+                                                fill="#F7D28D" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M15.9144 5.7557L15.9782 5.9557C16.0307 6.10665 15.9865 6.27442 15.8665 6.3797L11.9892 9.69971L13.138 14.6757C13.1769 14.8347 13.1172 15.0017 12.9864 15.0997L12.8109 15.2197C12.7427 15.2733 12.6582 15.3015 12.5716 15.2997C12.4985 15.3012 12.4266 15.2818 12.3642 15.2437L8.00016 12.5797L3.66011 15.2437C3.59771 15.2818 3.52573 15.3012 3.45267 15.2997C3.36607 15.3015 3.28151 15.2733 3.21334 15.2197L3.01388 15.0997C2.88308 15.0017 2.8234 14.8347 2.8623 14.6757L4.01114 9.69971L0.14179 6.3877C0.0156062 6.28304 -0.0321581 6.11062 0.0221197 5.9557L0.109878 5.7557C0.15654 5.59764 0.296829 5.48574 0.460912 5.4757L5.55888 5.0677L7.5135 0.355698C7.57613 0.199214 7.72831 0.0974847 7.89645 0.0996983H8.10385C8.27049 0.0961527 8.42105 0.198937 8.47881 0.355698L10.4654 5.0677L15.5634 5.4757C15.7275 5.48574 15.8677 5.59764 15.9144 5.7557ZM11.2871 12.9477L10.3936 9.20371L13.3215 6.6997L9.48409 6.3957L8.00016 2.8277V10.9397L11.2871 12.9477Z"
+                                                fill="#F7D28D" />
+                                        </svg>
+
+                                    </div>
+                                    <div
+                                        class="text-center justify-start text-[#a2a2a2] text-[13px] font-light font-['Montserrat']">
+                                        (4.5 etoiles) • 30 recommandations</div>
+                                </div>
+                            </div>
+                            <div class="self-stretch  flex flex-col justify-start items-start gap-6">
+                                <div class="self-stretch pt-2 inline-flex justify-start items-start gap-6">
+                                    <div class="size- inline-flex flex-col justify-start items-start gap-2">
+                                        <div class="justify-start text-Color-Scheme-1-Text text-base
+                                             font-normal font-['Roboto'] leading-normal">
+                                            Details</div>
+                                        <div class="self-stretch h-0 outline outline-1 
+                                            outline-offset-[-0.50px] outline-Color-Scheme-1-Accent">
+                                        </div>
+                                    </div>
+                                    <div class="size- inline-flex flex-col justify-start items-start gap-2"></div>
+                                </div>
+                                <div class="self-stretch justify-start"><span
+                                        class="text-[#a2a2a2] text-[13px] font-normal font-['Montserrat']">Saphire est
+                                        bien plus
+                                        qu’une montre : c’est une déclaration de style. Conçue pour les amateurs de
+                                        finesse et
+                                        de distinction, cette montre associe un design épuré à des matériaux haut de
+                                        gamme pour
+                                        offrir une expérience à la hauteur des plus grandes marques
+                                        horlogères.<br /><br />
+                                        Détails techniques :<br /></span><span
+                                        class="text-[#a2a2a2] text-[13px] font-normal font-['Montserrat']">Boîtier :
+                                        Acier
+                                        inoxydable poli, couleur argent<br />Diamètre : 40 mm – taille idéale pour
+                                        hommes et
+                                        femmes<br />Verre : Verre saphir ultra-résistant aux rayures<br />Mouvement :
+                                        Quartz
+                                        japonais (Miyota) pour une précision irréprochable<br />Bracelet : Cuir noir
+                                        véritable,
+                                        interchangeable<br />Étanchéité : 5 ATM – résiste aux éclaboussures et à la
+                                        pluie<br />Garantie : 24 mois</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" inline-flex flex-col justify-start items-start gap-4">
+                        <div class="self-stretch inline-flex justify-start items-start">
+                            <img class="aspect-square w-[490px] h-[490px] object-cover rounded-lg "
+                                src="images/vedette/1.jpg" />
+                        </div>
+                        <div class="grid grid-cols-5 gap-2 sm:gap-4">
+                            <img class="aspect-square w-[85px] object-cover rounded cursor-pointer 
+                            hover:opacity-75 transition-opacity" src="images/vedette/2.jpg" />
+                            <img class="aspect-square w-[85px] object-cover rounded cursor-pointer 
+                            hover:opacity-75 transition-opacity" src="images/vedette/3.jpg" />
+                            <img class="aspect-square w-[85px] object-cover rounded cursor-pointer 
+                            hover:opacity-75 transition-opacity" src="images/vedette/4.jpg" />
+                            <img class="aspect-square w-[85px] object-cover rounded cursor-pointer 
+                            hover:opacity-75 transition-opacity" src="images/vedette/5.jpg" />
+                            <img class="aspect-square w-[85px] object-cover rounded cursor-pointer 
+                            hover:opacity-75 transition-opacity" src="images/vedette/6.jpg" />
+                        </div>
+                    </div>
+                    <div class="inline-flex flex-col justify-start items-start gap-6 min-w-[290px]">
+                        <div class="self-stretch flex flex-col justify-start items-start gap-6">
+                            <div class="self-stretch inline-flex justify-start items-start gap-4">
+                                <div class="flex-1 inline-flex flex-col justify-start items-start gap-2">
+                                    <div
+                                        class="self-stretch justify-start text-Color-Scheme-1-Text text-[13px] font-bold font-['Montserrat']">
+                                        Couleur</div>
+                                    <div data-alternate="False" data-type="Default"
+                                        class="self-stretch p-3 rounded-md outline outline-1 outline-Color-Neutral-Darkest inline-flex justify-start items-center gap-4">
+                                        <div
+                                            class="flex-1 justify-start text-[#a2a2a2] text-[13px] font-light font-['Montserrat']">
+                                            Select</div>
+                                        <div class="size-6 relative overflow-hidden">
+                                            <div
+                                                class="w-[11.57px] h-[6.68px] left-[6.21px] top-[8.52px] absolute bg-Color-Scheme-1-Text border border-Color-Scheme-1-Text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="size- inline-flex flex-col justify-start items-start gap-2">
+                                    <div
+                                        class="self-stretch justify-start text-Color-Scheme-1-Text text-[13px] font-bold font-['Montserrat']">
+                                        Qty</div>
+                                    <div data-alternate="False" data-type="Default"
+                                        class="w-16 p-3 rounded-md outline outline-1 outline-Color-Neutral-Darkest inline-flex justify-start items-center gap-2">
+                                        <div
+                                            class="flex-1 justify-start text-[#a2a2a2] text-[13px] font-light font-['Montserrat']">
+                                            1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="self-stretch flex flex-col justify-start items-start gap-4">
+                            <div class="self-stretch pt-2 flex flex-col flex-wrap justify-start items-start gap-4">
+                                <div data-alternate="False" data-icon-position="No icon" data-small="False"
+                                    data-style="Primary"
+                                    class="self-stretch px-6 py-3 bg-[#f7a98d] rounded-[13px] inline-flex justify-center items-center gap-2">
+                                    <div
+                                        class="justify-start text-Color-White text-[13px] font-light font-['Montserrat']">
+                                        Ajouter une carte</div>
+                                </div>
+                                <div data-alternate="False" data-icon-position="No icon" data-small="False"
+                                    data-style="Secondary"
+                                    class="self-stretch px-6 py-3 rounded-[13px] outline outline-1 outline-[#f7a98d] inline-flex justify-center items-center gap-2">
+                                    <div
+                                        class="justify-start text-[#a2a2a2] text-[13px] font-light font-['Montserrat']">
+                                        Acheter
+                                        maintenant</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrousel 3 section -->
+    <section
+        class="w-full py-28 inline-flex flex-col justify-start items-center gap-20 overflow-hidden bg-blue-mid-clair50">
+        <div class="max-w-screen-xl px-2 w-full mx-auto flex flex-col items-center gap-20">
+
+            <!-- Titre & description -->
+            <div class="text-center">
+                <h2 class=" text-3xl sm:text-4xl lg:text-5xl font-bold font-['Playfair_Display']">
+                    Nos nouveautés
+                </h2>
+                <p class="text-[#a2a2a2] text-base sm:text-lg font-normal font-['Roboto'] mt-4">
+                    Nouvelles montres, nouveau style. La collection vient d’arriver.
+                </p>
+            </div>
+
+            <!-- Carrousel -->
+            <div class="w-full carousel relative" data-carousel data-perpage="4">
+                <div data-gallery class="flex gap-8 transition-transform duration-300 ease-in-out">
+                    <!-- Carte produit -->
+                    <div class="flex-none w-full sm:w-[394px] inline-flex flex-col justify-start items-start gap-4">
+                        <img class="self-stretch w-full object-cover h-[394px] lg:h-[486.40px]"
+                            src="images/carrousel-3/image1.jpg" />
+                        <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                            <div class="self-stretch flex flex-col justify-start items-start">
+                                <div class="self-stretch justify-start text-Color-Scheme-1-Text 
+                                    text-lg font-semibold font-['Roboto'] leading-[27px]">
+                                    RidgeX</div>
+                            </div>
+                            <div
+                                class="self-stretch justify-start text-Color-Scheme-1-Text text-xl font-semibold font-['Roboto'] leading-[30px]">
+                                15000XOF</div>
+                        </div>
+                    </div>
+                    <div class="flex-none w-full sm:w-[394px] inline-flex flex-col justify-start items-start gap-4">
+                        <img class="self-stretch w-full object-cover h-[394px] lg:h-[486.40px]"
+                            src="images/carrousel-3/image3.jpg" />
+                        <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                            <div class="self-stretch flex flex-col justify-start items-start">
+                                <div class="self-stretch justify-start text-Color-Scheme-1-Text 
+                                    text-lg font-semibold font-['Roboto'] leading-[27px]">
+                                    RidgeX</div>
+                            </div>
+                            <div
+                                class="self-stretch justify-start text-Color-Scheme-1-Text text-xl font-semibold font-['Roboto'] leading-[30px]">
+                                15000XOF</div>
+                        </div>
+                    </div>
+                    <div class="flex-none w-full sm:w-[394px] inline-flex flex-col justify-start items-start gap-4">
+                        <img class="self-stretch w-full object-cover h-[394px] lg:h-[486.40px]"
+                            src="images/carrousel-3/image4.jpg" />
+                        <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                            <div class="self-stretch flex flex-col justify-start items-start">
+                                <div class="self-stretch justify-start text-Color-Scheme-1-Text 
+                                    text-lg font-semibold font-['Roboto'] leading-[27px]">
+                                    RidgeX</div>
+                            </div>
+                            <div
+                                class="self-stretch justify-start text-Color-Scheme-1-Text text-xl font-semibold font-['Roboto'] leading-[30px]">
+                                15000XOF</div>
+                        </div>
+                    </div>
+                    <div class="flex-none w-full sm:w-[394px] inline-flex flex-col justify-start items-start gap-4">
+                        <img class="self-stretch w-full object-cover h-[394px] lg:h-[486.40px]"
+                            src="images/carrousel-3/image2.jpg" />
+                        <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                            <div class="self-stretch flex flex-col justify-start items-start">
+                                <div class="self-stretch justify-start text-Color-Scheme-1-Text 
+                                    text-lg font-semibold font-['Roboto'] leading-[27px]">
+                                    RidgeX</div>
+                            </div>
+                            <div
+                                class="self-stretch justify-start text-Color-Scheme-1-Text text-xl font-semibold font-['Roboto'] leading-[30px]">
+                                15000XOF</div>
+                        </div>
+                    </div>
+                    <div class="flex-none w-full sm:w-[394px] inline-flex flex-col justify-start items-start gap-4">
+                        <img class="self-stretch w-full object-cover h-[394px] lg:h-[486.40px]"
+                            src="images/carrousel-3/image3.jpg" />
+                        <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                            <div class="self-stretch flex flex-col justify-start items-start">
+                                <div class="self-stretch justify-start text-Color-Scheme-1-Text 
+                                    text-lg font-semibold font-['Roboto'] leading-[27px]">
+                                    RidgeX</div>
+                            </div>
+                            <div
+                                class="self-stretch justify-start text-Color-Scheme-1-Text text-xl font-semibold font-['Roboto'] leading-[30px]">
+                                15000XOF</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10"></div>
+                <div class="w-full flex flex-1 justify-between items-center">
+                    <!-- Pagination dots -->
+                    <div id="paginationDots" data-dots class="flex justify-start items-start gap-2"></div>
+                    <div class="size- flex justify-start items-start gap-4 ">
+                        <button data-direction="Right" id="prevBtn" data-prev
+                            class="size- p-3 bg-white/25 rounded-[50px] outline outline-1 
+                                outline-offset-[-1px] outline-Color-Scheme-1-Border flex justify-center items-center gap-2">
+                            <i data-lucide="arrow-left" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </button>
+                        <button data-direction="Left" id="nextBtn" data-next class="size- p-3 bg-white/25 rounded-[50px] 
+                                outline outline-1 outline-offset-[-1px] outline-Color-Scheme-1-Border 
+                                flex justify-center items-center gap-2">
+                            <i data-lucide="arrow-right" class="h-5 w-5 lg:h-6 lg:w-6"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 
     <!-- Footer Section -->
     <footer
@@ -229,6 +691,7 @@
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
