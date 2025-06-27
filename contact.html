@@ -18,8 +18,9 @@
     <header class="w-full bg-blue-dark400">
         <div class="container mx-auto flex items-center justify-between py-4 lg:py-7  lg:px-12">
             <!-- Logo -->
-            <img class="w-16 h-9 lg:w-[107px] lg:h-[60px] object-cover" alt="Univers des Montres" src="/images/logo.png">
-    
+            <img class="w-16 h-9 lg:w-[107px] lg:h-[60px] object-cover" alt="Univers des Montres"
+                src="/images/logo.png">
+
             <!-- Desktop Navigation -->
             <div class="hidden lg:flex items-center gap-8 ">
                 <nav class="flex gap-8">
@@ -41,7 +42,7 @@
                         <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </a>
                 </nav>
-    
+
                 <!-- Search bar -->
                 <div class="relative">
                     <input type="text" placeholder="Rechercher..."
@@ -49,16 +50,17 @@
                     <i data-lucide="search"
                         class="absolute right-4 top-1/2 transform -translate-y-1/2 w-[14px] h-[14px] text-blue-dark0"></i>
                 </div>
-    
-    
+
+
             </div>
             <div class="flex items-center gap-4 lg:gap-8">
                 <!-- Mobile menu button -->
-                <button class="lg:hidden text-blue-dark0 p-2" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+                <button class="lg:hidden text-blue-dark0 p-2" onclick="toggleMobileMenu()"
+                    aria-label="Toggle mobile menu">
                     <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
                     <i data-lucide="x" class="w-6 h-6 hidden" id="close-icon"></i>
                 </button>
-    
+
                 <!-- Cart icon -->
                 <div class="flex items-center">
                     <i data-lucide="shopping-cart"
@@ -66,7 +68,7 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- Mobile Navigation Menu -->
         <div class="mobile-menu lg:hidden bg-blue-dark400 border-t border-white border-opacity-10" id="mobile-menu">
             <div class="px-4 py-4 space-y-4">
@@ -90,7 +92,7 @@
                         <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </a>
                 </nav>
-    
+
                 <!-- Mobile Search -->
                 <div class="relative pt-2">
                     <input type="text" placeholder="Rechercher..."
@@ -103,8 +105,8 @@
     </header>
 
     <!-- Hero Section -->
-    <section
-        class="relative w-full h-[60vh] sm:h-[70vh] lg:h-[920px] flex flex-col items-center justify-center gap-8 lg:gap-20 px-4 sm:px-8 lg:px-16 py-0 bg-[url(/images/about/1.jpg)] bg-cover bg-center">
+    <section class="relative w-full h-[60vh] sm:h-[70vh] lg:h-[920px] flex flex-col items-center 
+        justify-center gap-8 lg:gap-20 px-4 sm:px-8 lg:px-16 py-0 bg-[url(/images/contact/1.jpg)] bg-cover bg-center">
         <div class="flex flex-col max-w-screen-xl items-center gap-8 lg:gap-20 relative w-full">
             <div class="flex flex-col max-w-screen-md items-center w-full gap-6 lg:gap-8">
                 <div class="flex flex-col items-start gap-4 lg:gap-6 self-stretch w-full">
@@ -132,7 +134,135 @@
         </div>
     </section>
 
+    <!-- Contact Form -->
 
+    <section class="container mx-auto flex-col justify-start items-start px-16 py-28 gap-12 lg:gap-20 space-y-20">
+        <div>
+            <h1 class="self-stretch justify-start text-Color-Scheme-1-Text text-[39px] 
+                font-extrabold font-['Playfair_Display']">
+                Formulaire de contact</h1>
+            <p class="self-stretch justify-start text-[#a1a1a1] text-[15px] font-normal font-['Montserrat']">
+                Remplissez le
+                formulaire ci-dessous et notre équipe vous répondra dans les plus brefs délais</p>
+        </div>
+        <div class="grid grid-col-1 lg:grid-cols-2 gap-8 w-full">
+            <form action="" class="space-y-6 ">
+                <!-- Nom et Prenom -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 w-full">
+                    <div class="flex flex-col justify-start items-start gap-2 w-full  ">
+                        <div class="justify-start text-Color-Scheme-1-Text text-[13px] 
+                            font-light font-['Montserrat']">
+                            Prénom
+                        </div>
+                        <input data-alternate="False" data-type="Default" class="self-stretch 
+                        p-3 rounded-[13px] outline outline-1 outline-[#a2a2a2] 
+                        inline-flex justify-start items-center gap-2">
+                    </div>
+                    <div class="flex flex-col justify-start items-start gap-2 w-full">
+                        <div class="self-stretch justify-start text-Color-Scheme-1-Text text-[13px] 
+                            font-light font-['Montserrat']">
+                            Nom
+                        </div>
+                        <input data-alternate="False" data-type="Default" class="self-stretch 
+                        p-3 rounded-[13px] outline outline-1 outline-[#a2a2a2] 
+                        inline-flex justify-start items-center gap-2">
+                    </div>
+                </div>
+                <!-- Email et Tel -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 w-full">
+                    <div class="flex flex-col justify-start items-start gap-2 w-full">
+                        <div class="self-stretch justify-start text-Color-Scheme-1-Text text-[13px] 
+                            font-light font-['Montserrat']">
+                            Email
+                        </div>
+                        <input data-alternate="False" data-type="Default" class="self-stretch 
+                        p-3 rounded-[13px] outline outline-1 outline-[#a2a2a2] 
+                        inline-flex justify-start items-center gap-2">
+                    </div>
+                    <div class="flex flex-col justify-start items-start gap-2 w-full">
+                        <div class="self-stretch justify-start text-Color-Scheme-1-Text text-[13px] 
+                            font-light font-['Montserrat']">
+                            Numéro de téléphone
+                        </div>
+                        <input data-alternate="False" data-type="Default" class="self-stretch 
+                        p-3 rounded-[13px] outline outline-1 outline-[#a2a2a2] 
+                        inline-flex justify-start items-center gap-2">
+                    </div>
+                </div>
+                <!-- Message -->
+                <div class="flex flex-col justify-start items-start gap-2 w-full">
+                    <div class="self-stretch justify-start text-Color-Scheme-1-Text text-[13px] 
+                            font-light font-['Montserrat']">
+                        Message
+                    </div>
+                    <textarea data-alternate="False" data-type="Default" rows="4"
+                        class="self-stretch p-3 rounded-[13px] outline outline-1 outline-[#a2a2a2]"></textarea>
+                </div>
+                <!-- Checkbox -->
+                <div class="size- pb-4 inline-flex justify-start items-center gap-2">
+                    <input type="checkbox" class="relative bg-Color-White rounded-[3px] size-[18px]">
+                    <div class="justify-center text-[#a2a2a2] text-[13px] font-light font-['Montserrat']">Acceptez les
+                        Terms</div>
+                </div>
+
+
+                <div>
+                    <button class="size- px-6 py-3 bg-[#f7a98d] rounded-[13px] 
+                        inline-flex justify-center items-center gap-2">
+                        Soumettre
+                    </button>
+                </div>
+            </form>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="flex flex-col justify-start items-start gap-4">
+                    <div class="size-8 relative overflow-hidden">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.73877 5.62622H27.2612C27.7386 5.62622 28.1473 5.79529 28.5093 6.15747C28.8715 6.51947 29.0405 6.92816 29.0405 7.40552V24.595C29.0405 25.0695 28.8713 25.4756 28.5093 25.8362C28.1474 26.197 27.7391 26.3665 27.2612 26.3665H4.73877C4.32308 26.3665 3.95997 26.2369 3.63428 25.9631L3.49658 25.8372C3.13594 25.4767 2.96729 25.0701 2.96729 24.595V7.40552C2.96729 6.92774 3.13602 6.51925 3.49658 6.15747H3.49756C3.85816 5.79544 4.26423 5.62622 4.73877 5.62622ZM4.23877 7.56567V25.095H27.7612V8.49438L26.9868 9.00415L16.3657 15.9963C16.2804 16.0412 16.2047 16.0772 16.1372 16.1038C16.116 16.1121 16.0731 16.1233 15.9995 16.1233C15.9262 16.1232 15.884 16.1121 15.8628 16.1038C15.7951 16.0771 15.719 16.0414 15.6333 15.9963L5.23877 9.15259V8.22095L15.7261 15.0901L15.9995 15.2698L16.2729 15.0901L27.4019 7.82349L28.8081 6.90552H3.229L4.23877 7.56567Z"
+                                fill="#090909" stroke="#090909" />
+                        </svg>
+
+                    </div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                        <div
+                            class="self-stretch justify-start text-Color-Scheme-1-Text text-xl font-bold font-['Roboto'] leading-7">
+                            Email</div>
+                        <div
+                            class="self-stretch justify-start text-[#a2a2a2] text-[13px] font-light font-['Montserrat']">
+                            Vous avez
+                            besoin d’assistance ?</div>
+                        <div
+                            class="self-stretch justify-start text-[#bd481d] text-sm font-normal font-['Montserrat'] underline">
+                            universdesmontres@gmail.com</div>
+                    </div>
+                </div>
+
+
+                <div class="flex flex-col justify-start items-start gap-4">
+                    <div class="size-8 relative overflow-hidden">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.49194 4.29297H10.1589C10.4428 4.29305 10.6542 4.37934 10.8269 4.54199C11.0198 4.72357 11.1655 4.97248 11.2507 5.3125L12.1404 9.34082C12.1873 9.6688 12.1775 9.93944 12.1248 10.1611C12.0757 10.3672 11.9767 10.5392 11.821 10.6875L11.8152 10.6943L8.45776 14.0049L8.17847 14.2803L8.37866 14.6172C8.94447 15.568 9.54548 16.458 10.1814 17.2871C10.8201 18.1199 11.5293 18.912 12.3083 19.6631C13.1219 20.5033 13.9722 21.2654 14.8591 21.9482C15.7521 22.6357 16.6847 23.2372 17.657 23.752L17.988 23.9277L18.2498 23.6592L21.4558 20.3691L21.4656 20.3584C21.6697 20.1369 21.8903 19.9983 22.1296 19.9268L22.1306 19.9277C22.3246 19.8702 22.518 19.8482 22.7126 19.8623L22.908 19.8887L26.6814 20.7236C27.0065 20.8142 27.2511 20.9736 27.4363 21.1973C27.6172 21.4158 27.7067 21.6631 27.7068 21.96V26.5078C27.7068 26.8656 27.592 27.1386 27.3669 27.3613C27.1392 27.5866 26.8658 27.6992 26.5154 27.6992C23.9878 27.6991 21.4039 27.0919 18.7595 25.8633C16.1159 24.6351 13.6585 22.8892 11.3884 20.6191C9.26041 18.4911 7.59215 16.1973 6.37769 13.7383L6.14038 13.2451L5.91675 12.749C4.83521 10.2746 4.30054 7.85669 4.30054 5.49219C4.30056 5.17911 4.38835 4.92968 4.56128 4.7207L4.64038 4.63379C4.86532 4.40761 5.13789 4.29297 5.49194 4.29297ZM5.58765 6.09375C5.62836 7.03203 5.77591 8.01839 6.0271 9.05176C6.27984 10.0914 6.67723 11.2422 7.21362 12.501L7.50269 13.1797L8.02612 12.6592L10.7175 9.98145L10.9109 9.78906L10.8542 9.52246L10.0955 5.96777L10.0115 5.57227H5.56519L5.58765 6.09375ZM26.4285 21.9717L26.0291 21.8896L22.7156 21.2041L22.4441 21.1475L22.2527 21.3486L19.6355 24.0918L19.1541 24.5957L19.7859 24.8896C20.702 25.3158 21.696 25.6624 22.7664 25.9307C23.838 26.1992 24.8838 26.3605 25.9031 26.4121L26.4285 26.4385V21.9717Z"
+                                fill="#090909" stroke="#090909" />
+                        </svg>
+
+                    </div>
+                    <div class="self-stretch flex flex-col justify-start items-start gap-2">
+                        <div
+                            class="self-stretch justify-start text-Color-Scheme-1-Text text-xl font-bold font-['Roboto'] leading-7">
+                            Téléphone</div>
+                        <div
+                            class="self-stretch justify-start text-[#a2a2a2] text-[13px] font-light font-['Montserrat']">
+                            Contactez nous au</div>
+                        <div
+                            class="self-stretch justify-start text-[#bd481d] text-sm font-normal font-['Montserrat'] underline">
+                            +221 77 777 77 77</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer Section -->
     <footer
