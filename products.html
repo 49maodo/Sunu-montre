@@ -15,11 +15,12 @@
 
 <body class="bg-white">
     <!-- Navbar Section -->
-    <header class="w-full bg-blue-dark400">
+    <header class="w-full bg-blue-dark400 fixed top-0 right-0 left-0 z-50 shadow-lg">
         <div class="container mx-auto flex items-center justify-between py-4 lg:py-7  lg:px-12">
             <!-- Logo -->
-            <img class="w-16 h-9 lg:w-[107px] lg:h-[60px] object-cover" alt="Univers des Montres" src="/images/logo.png">
-    
+            <img class="w-16 h-9 lg:w-[107px] lg:h-[60px] object-cover" alt="Univers des Montres"
+                src="/images/logo.png">
+
             <!-- Desktop Navigation -->
             <div class="hidden lg:flex items-center gap-8 ">
                 <nav class="flex gap-8">
@@ -41,7 +42,7 @@
                         <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </a>
                 </nav>
-    
+
                 <!-- Search bar -->
                 <div class="relative">
                     <input type="text" placeholder="Rechercher..."
@@ -49,16 +50,17 @@
                     <i data-lucide="search"
                         class="absolute right-4 top-1/2 transform -translate-y-1/2 w-[14px] h-[14px] text-blue-dark0"></i>
                 </div>
-    
-    
+
+
             </div>
             <div class="flex items-center gap-4 lg:gap-8">
                 <!-- Mobile menu button -->
-                <button class="lg:hidden text-blue-dark0 p-2" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu">
+                <button class="lg:hidden text-blue-dark0 p-2" onclick="toggleMobileMenu()"
+                    aria-label="Toggle mobile menu">
                     <i data-lucide="menu" class="w-6 h-6" id="menu-icon"></i>
                     <i data-lucide="x" class="w-6 h-6 hidden" id="close-icon"></i>
                 </button>
-    
+
                 <!-- Cart icon -->
                 <div class="flex items-center">
                     <i data-lucide="shopping-cart"
@@ -66,7 +68,7 @@
                 </div>
             </div>
         </div>
-    
+
         <!-- Mobile Navigation Menu -->
         <div class="mobile-menu lg:hidden bg-blue-dark400 border-t border-white border-opacity-10" id="mobile-menu">
             <div class="px-4 py-4 space-y-4">
@@ -90,7 +92,7 @@
                         <i data-lucide="chevron-down" class="w-4 h-4"></i>
                     </a>
                 </nav>
-    
+
                 <!-- Mobile Search -->
                 <div class="relative pt-2">
                     <input type="text" placeholder="Rechercher..."
@@ -103,8 +105,9 @@
     </header>
 
     <!-- Hero Section -->
-    <section
-        class="relative w-full h-[60vh] sm:h-[70vh] lg:h-[920px] flex flex-col items-center justify-center gap-8 lg:gap-20 px-4 sm:px-8 lg:px-16 py-0 bg-[url(/images/about/1.jpg)] bg-cover bg-center">
+    <section class="relative w-full h-[60vh] sm:h-[70vh] lg:h-[920px] flex flex-col items-center 
+        justify-center gap-8 lg:gap-20 px-4 sm:px-8 lg:px-16 py-0 bg-[url(/images/product/1.jpg)] bg-cover bg-center">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
         <div class="flex flex-col max-w-screen-xl items-center gap-8 lg:gap-20 relative w-full">
             <div class="flex flex-col max-w-screen-md items-center w-full gap-6 lg:gap-8">
                 <div class="flex flex-col items-start gap-4 lg:gap-6 self-stretch w-full">
@@ -113,7 +116,7 @@
                         Bienvenue sur Univers des Montres
                     </h1>
                     <p
-                        class="self-stretch font-montserrat font-normal text-gray-400 text-base sm:text-lg lg:text-xl text-center leading-relaxed px-4 sm:px-0">
+                        class="text-center justify-start text-[#7c7c7c] text-lg font-normal font-['Roboto'] leading-[27px]">
                         Connectez-vous ou créez un compte pour profiter des offres exclusives et suivre vos commandes.
                     </p>
                 </div>
@@ -132,6 +135,711 @@
         </div>
     </section>
 
+    <!-- Section Category -->
+    <section>
+        <div
+            class="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-16 sm:py-20 md:py-24 lg:py-28 bg-[#fff4f1] flex flex-col justify-start items-center gap-12 sm:gap-16 md:gap-20 overflow-hidden">
+            <div class="w-full max-w-7xl flex flex-col justify-start items-start gap-12 sm:gap-16 md:gap-20">
+                <!-- Header Section -->
+                <div class="w-full flex justify-center items-center">
+                    <div class="max-w-4xl flex flex-col justify-start items-center gap-4 text-center px-4">
+                        <div class="w-full">
+                            <h2
+                                class="text-Color-Scheme-1-Text text-2xl sm:text-3xl md:text-4xl lg:text-[39px] font-extrabold font-playfair leading-tight">
+                                Catégories de montres
+                            </h2>
+                        </div>
+                        <div class="w-full max-w-3xl">
+                            <p
+                                class="text-Color-Scheme-1-Text text-xs sm:text-sm md:text-[13px] font-light font-montserrat leading-relaxed">
+                                Découvrez nos différentes catégories de montres, soigneusement classées pour répondre à
+                                tous
+                                les styles, occasions et envies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categories Grid -->
+                <div class="w-full flex flex-col justify-start items-start gap-8 sm:gap-12">
+                    <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                        <!-- Montre de luxe -->
+                        <div class="w-full flex flex-col justify-start items-start gap-4">
+                            <div class="w-full aspect-[4/5] overflow-hidden rounded-lg">
+                                <img class="w-full h-full object-cover" src="images/product/2.jpg"
+                                    alt="Montre de luxe" />
+                            </div>
+                            <div class="w-full flex flex-col justify-start items-start gap-2">
+                                <div class="w-full">
+                                    <h3 class="text-Color-Scheme-1-Text text-base sm:text-lg font-bold font-montserrat">
+                                        Montre de luxe
+                                    </h3>
+                                </div>
+                                <div class="w-full">
+                                    <p
+                                        class="text-Color-Scheme-1-Text text-xs sm:text-sm md:text-[13px] font-light font-montserrat leading-relaxed">
+                                        Alliant élégance intemporelle et savoir-faire exceptionnel, nos montres de luxe
+                                        sont
+                                        conçues pour ceux qui recherchent l'excellence à chaque détail
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Montre sportive -->
+                        <div class="w-full flex flex-col justify-start items-start gap-4">
+                            <div class="w-full aspect-[4/5] overflow-hidden rounded-lg">
+                                <img class="w-full h-full object-cover" src="images/product/3.jpg"
+                                    alt="Montre sportive" />
+                            </div>
+                            <div class="w-full flex flex-col justify-start items-start gap-2">
+                                <div class="w-full">
+                                    <h3 class="text-Color-Scheme-1-Text text-base sm:text-lg font-bold font-montserrat">
+                                        Montre sportive
+                                    </h3>
+                                </div>
+                                <div class="w-full">
+                                    <p
+                                        class="text-Color-Scheme-1-Text text-xs sm:text-sm md:text-[13px] font-light font-montserrat leading-relaxed">
+                                        Robustes, précises et fonctionnelles, nos montres de sport sont conçues pour
+                                        vous
+                                        accompagner dans toutes vos performances, du quotidien aux défis les plus
+                                        extrêmes
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Montre classique -->
+                        <div class="w-full flex flex-col justify-start items-start gap-4 sm:col-span-2 lg:col-span-1">
+                            <div class="w-full aspect-[4/5] overflow-hidden rounded-lg">
+                                <img class="w-full h-full object-cover" src="images/product/4.jpg"
+                                    alt="Montre classique" />
+                            </div>
+                            <div class="w-full flex flex-col justify-start items-start gap-2">
+                                <div class="w-full">
+                                    <h3 class="text-Color-Scheme-1-Text text-base sm:text-lg font-bold font-montserrat">
+                                        Montre classique
+                                    </h3>
+                                </div>
+                                <div class="w-full">
+                                    <p
+                                        class="text-Color-Scheme-1-Text text-xs sm:text-sm md:text-[13px] font-light font-montserrat leading-relaxed">
+                                        Simplicité, raffinement et intemporalité : nos montres classiques subliment
+                                        votre
+                                        style avec discrétion, que ce soit pour le travail ou les grandes occasions
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section montre de luxe -->
+    <section class="bg-white">
+        <!-- Header Section -->
+        <div class="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-16 sm:py-20 md:py-24 lg:py-28">
+            <div class="max-w-screen-xl mx-auto text-center">
+                <h1
+                    class="text-Color-Scheme-1-Text text-2xl sm:text-3xl md:text-4xl lg:text-[39px] font-extrabold font-playfair mb-4">
+                    Montre de Luxe
+                </h1>
+                <div class="max-w-2xl mx-auto text-[#a2a2a2] text-xs sm:text-sm font-light font-montserrat">
+                    L'expression ultime du raffinement – nos montres de luxe incarnent l'élégance, la précision et le
+                    prestige.
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
+            <div class="pb-8 flex flex-col gap-12">
+                <!-- Image Gallery Section -->
+                <div class="flex flex-col gap-6">
+                    <!-- Images Grid -->
+                    <div class="flex flex-col lg:flex-row gap-4">
+                        <!-- Main Image -->
+                        <div class="w-full lg:w-1/2">
+                            <img class="w-full h-64 sm:h-80 md:h-96 lg:h-[632px] object-cover rounded-lg"
+                                src="images/product/5.jpg" alt="Montre Rolex principale" />
+                        </div>
+
+                        <!-- Secondary Images Grid -->
+                        <div class="w-full lg:w-1/2 flex flex-col gap-4">
+                            <div class="flex gap-4">
+                                <img class="flex-1 aspect-square h-32 sm:h-40 md:h-48 lg:h-[308px] object-cover rounded-lg"
+                                    src="images/product/6.jpg" alt="Détail montre 1" />
+                                <img class="flex-1 aspect-square h-32 sm:h-40 md:h-48 lg:h-[308px] object-cover rounded-lg"
+                                    src="images/product/7.jpg" alt="Détail montre 2" />
+                            </div>
+                            <div class="flex gap-4">
+                                <img class="flex-1 aspect-square h-32 sm:h-40 md:h-48 lg:h-[308px] object-cover rounded-lg"
+                                    src="images/product/8.jpg" alt="Détail montre 3" />
+                                <img class="flex-1 aspect-square h-32 sm:h-40 md:h-48 lg:h-[308px] object-cover rounded-lg"
+                                    src="images/product/4.jpg" alt="Détail montre 4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Information Section -->
+                <div class="flex flex-col xl:flex-row gap-8 lg:gap-20">
+                    <!-- Product Details -->
+                    <div class="flex-1">
+                        <h2
+                            class="text-Color-Scheme-1-Text text-2xl sm:text-3xl lg:text-[40px] font-bold font-roboto leading-tight mb-8">
+                            Rolex
+                        </h2>
+
+                        <div class="flex flex-col gap-8">
+                            <!-- Description -->
+                            <div class="flex flex-col gap-4">
+                                <p
+                                    class="text-Color-Scheme-1-Text text-xs sm:text-sm font-normal font-montserrat leading-relaxed">
+                                    Rolex est une maison horlogère suisse de renommée mondiale, fondée en 1905 par Hans
+                                    Wilsdorf.
+                                    Symbole d'élégance, de précision et de prestige, Rolex incarne l'innovation
+                                    technique et
+                                    le luxe intemporel.
+                                    Chaque montre est fabriquée avec une rigueur extrême, en utilisant des matériaux
+                                    nobles
+                                    comme l'acier Oystersteel,
+                                    l'or 18 carats, ou encore la céramique Cerachrom.
+                                </p>
+                            </div>
+
+                            <!-- Details Section -->
+                            <div class="flex flex-col gap-6">
+                                <div class="pt-2">
+                                    <div class="inline-flex flex-col gap-2">
+                                        <div
+                                            class="text-Color-Scheme-1-Text text-base font-normal font-roboto leading-normal">
+                                            Détails
+                                        </div>
+                                        <div class="w-full h-px bg-[#f7a98d]"></div>
+                                    </div>
+                                </div>
+
+                                <div class="text-[#a2a2a2] text-xs font-light font-montserrat leading-relaxed">
+                                    <p><strong>Origine :</strong> Genève, Suisse</p>
+                                    <p><strong>Fondation :</strong> 1905</p>
+                                    <p><strong>Fondateur :</strong> Hans Wilsdorf</p>
+                                    <p><strong>Matériaux utilisés :</strong> Or, platine, acier Oystersteel, céramique,
+                                        saphir</p>
+                                    <br>
+                                    <p><strong>Fonctions disponibles :</strong></p>
+                                    <p>• Chronomètre certifié COSC</p>
+                                    <p>• Étanchéité jusqu'à 100m voire 1 220m (modèle Sea-Dweller)</p>
+                                    <p>• Fonctions GMT, date, jour, phase lunaire, etc.</p>
+                                    <br>
+                                    <p><strong>Modèles emblématiques :</strong></p>
+                                    <p>• Submariner – montre de plongée</p>
+                                    <p>• Daytona – montre sportive et chronographe</p>
+                                    <p>• Datejust – élégance classique</p>
+                                    <p>• GMT-Master II – montre de voyageur</p>
+                                    <p>• Oyster Perpetual – minimalisme sophistiqué</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Purchase Section -->
+                    <div class="w-full xl:max-w-[400px] flex flex-col gap-6">
+                        <!-- Price -->
+                        <div class="flex flex-col gap-2">
+                            <div
+                                class="text-Color-Scheme-1-Text text-2xl sm:text-3xl font-bold font-roboto leading-tight">
+                                30000 XOF
+                            </div>
+                        </div>
+
+                        <!-- Rating -->
+                        <div class="flex items-center gap-2">
+                            <div class="flex gap-1">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.25672 0.934212C7.53172 0.281043 8.46832 0.281044 8.74332 
+                                        0.934214L10.3663 4.78933C10.4823 5.06469 10.7445 5.25284 11.0454
+                                         5.27667L15.2582 5.61033C15.9719 5.66686 16.2614 6.54686 15.7175 7.00707L12.5079 9.72329C12.2786 9.91734 12.1784 10.2218 12.2485 10.5118L13.2291 14.5732C13.3952 15.2613 12.6375 15.8052 12.0264 15.4365L8.41965 13.26C8.16202 13.1045 7.83802 13.1045 7.5804 13.26L3.9736 15.4365C3.3625 15.8052 2.60477 15.2613 2.77091 14.5732L3.75155 10.5118C3.82159 10.2218 3.72147 9.91734 3.49221 9.72329L0.28245 7.00707C-0.261375 6.54686 0.0280544 5.66686 0.741835 5.61033L4.9547 5.27667C5.25561 5.25284 5.51774 5.06469 5.63367 4.78933L7.25672 0.934212Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.25672 0.934212C7.53172 0.281043 8.46832 0.281044 8.74332 
+                                        0.934214L10.3663 4.78933C10.4823 5.06469 10.7445 5.25284 11.0454
+                                         5.27667L15.2582 5.61033C15.9719 5.66686 16.2614 6.54686 15.7175 7.00707L12.5079 9.72329C12.2786 9.91734 12.1784 10.2218 12.2485 10.5118L13.2291 14.5732C13.3952 15.2613 12.6375 15.8052 12.0264 15.4365L8.41965 13.26C8.16202 13.1045 7.83802 13.1045 7.5804 13.26L3.9736 15.4365C3.3625 15.8052 2.60477 15.2613 2.77091 14.5732L3.75155 10.5118C3.82159 10.2218 3.72147 9.91734 3.49221 9.72329L0.28245 7.00707C-0.261375 6.54686 0.0280544 5.66686 0.741835 5.61033L4.9547 5.27667C5.25561 5.25284 5.51774 5.06469 5.63367 4.78933L7.25672 0.934212Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.25672 0.934212C7.53172 0.281043 8.46832 0.281044 8.74332 
+                                        0.934214L10.3663 4.78933C10.4823 5.06469 10.7445 5.25284 11.0454
+                                         5.27667L15.2582 5.61033C15.9719 5.66686 16.2614 6.54686 15.7175 7.00707L12.5079 9.72329C12.2786 9.91734 12.1784 10.2218 12.2485 10.5118L13.2291 14.5732C13.3952 15.2613 12.6375 15.8052 12.0264 15.4365L8.41965 13.26C8.16202 13.1045 7.83802 13.1045 7.5804 13.26L3.9736 15.4365C3.3625 15.8052 2.60477 15.2613 2.77091 14.5732L3.75155 10.5118C3.82159 10.2218 3.72147 9.91734 3.49221 9.72329L0.28245 7.00707C-0.261375 6.54686 0.0280544 5.66686 0.741835 5.61033L4.9547 5.27667C5.25561 5.25284 5.51774 5.06469 5.63367 4.78933L7.25672 0.934212Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.25672 0.934212C7.53172 0.281043 8.46832 0.281044 8.74332 
+                                        0.934214L10.3663 4.78933C10.4823 5.06469 10.7445 5.25284 11.0454
+                                         5.27667L15.2582 5.61033C15.9719 5.66686 16.2614 6.54686 15.7175 7.00707L12.5079 9.72329C12.2786 9.91734 12.1784 10.2218 12.2485 10.5118L13.2291 14.5732C13.3952 15.2613 12.6375 15.8052 12.0264 15.4365L8.41965 13.26C8.16202 13.1045 7.83802 13.1045 7.5804 13.26L3.9736 15.4365C3.3625 15.8052 2.60477 15.2613 2.77091 14.5732L3.75155 10.5118C3.82159 10.2218 3.72147 9.91734 3.49221 9.72329L0.28245 7.00707C-0.261375 6.54686 0.0280544 5.66686 0.741835 5.61033L4.9547 5.27667C5.25561 5.25284 5.51774 5.06469 5.63367 4.78933L7.25672 0.934212Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.9144 6.05599L15.9782 6.25599C16.0307 6.40694 15.9865 6.57471 15.8665 6.67999L11.9892 10L13.138 14.976C13.1769 15.135 13.1172 15.302 12.9864 15.4L12.8109 15.52C12.7427 15.5736 12.6582 15.6018 12.5716 15.6C12.4985 15.6015 12.4266 15.5821 12.3642 15.544L8.00016 12.88L3.66011 15.544C3.59771 15.5821 3.52573 15.6015 3.45267 15.6C3.36607 15.6018 3.28151 15.5736 3.21334 15.52L3.01388 15.4C2.88308 15.302 2.8234 15.135 2.8623 14.976L4.01114 10L0.14179 6.68799C0.0156062 6.58334 -0.0321581 6.41091 0.0221197 6.25599L0.109878 6.05599C0.15654 5.89793 0.296829 5.78603 0.460912 5.77599L5.55888 5.36799L7.5135 0.655991C7.57613 0.499507 7.72831 0.397778 7.89645 0.399991H8.10385C8.27049 0.396446 8.42105 0.49923 8.47881 0.655991L10.4654 5.36799L15.5634 5.77599C15.7275 5.78603 15.8677 5.89793 15.9144 6.05599ZM11.2871 13.248L10.3936 9.504L13.3215 6.99999L9.48409 6.69599L8.00016 3.12799V11.24L11.2871 13.248Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                            </div>
+                            <div class="text-[#a2a2a2] text-xs sm:text-sm font-light font-montserrat">
+                                (4.5 stars) • 10 recommandations
+                            </div>
+                        </div>
+
+                        <!-- Quantity and Actions -->
+                        <div class="flex flex-col gap-6 mt-6">
+                            <!-- Quantity -->
+                            <div class="flex flex-col gap-2">
+                                <div class="text-Color-Scheme-1-Text text-base font-bold font-roboto leading-normal">
+                                    Quantité
+                                </div>
+                                <input type="text" class="w-16 p-3 border border-[#a2a2a2] flex items-center" value="1">
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex flex-col gap-4 pt-2">
+                                <button
+                                    class="w-full px-6 py-3 bg-[#f7a98d] rounded-[13px] flex justify-center items-center transition-colors hover:bg-[#f5967a]">
+                                    <div class="text-white text-base font-normal font-roboto">
+                                        Ajouter au panier
+                                    </div>
+                                </button>
+                                <button
+                                    class="w-full px-6 py-3 rounded-[13px] border border-[#f7a98d] flex justify-center items-center transition-colors hover:bg-[#f7a98d] hover:text-white">
+                                    <div class="text-[#a2a2a2] text-base font-normal font-roboto hover:text-white">
+                                        Acheter maintenant
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section montre sportive -->
+    <section class="bg-white">
+        <!-- Header Section -->
+        <div class="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-16 sm:py-20 md:py-24 lg:py-28">
+            <div class="max-w-screen-xl mx-auto text-center">
+                <h1
+                    class="text-Color-Scheme-1-Text text-2xl sm:text-3xl md:text-4xl lg:text-[39px] font-extrabold font-playfair mb-4">
+                    Montre de sport
+                </h1>
+                <div class="max-w-2xl mx-auto text-[#a2a2a2] text-xs sm:text-sm font-light font-montserrat">
+                    Conçues pour les performances et le style actif, nos montres de sport allient robustesse,
+                    technologie et design
+                    dynamique
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
+            <div class="pb-8 flex flex-col gap-12">
+                <!-- Image Gallery Section -->
+                <div class="flex flex-col gap-6">
+                    <!-- Images Grid -->
+                    <div class="flex flex-col lg:flex-row gap-4">
+                        <!-- Main Image -->
+                        <div class="w-full lg:w-1/2">
+                            <img class="w-full h-64 sm:h-80 md:h-96 lg:h-[632px] object-cover rounded-lg"
+                                src="images/product/10.jpg" alt="Montre Rolex principale" />
+                        </div>
+
+                        <!-- Secondary Images Grid -->
+                        <div class="w-full lg:w-1/2 flex flex-col gap-4">
+                            <div class="flex gap-4">
+                                <img class="flex-1 aspect-square h-32 sm:h-40 md:h-48 lg:h-[308px] object-cover rounded-lg"
+                                    src="images/product/11.jpg" alt="Détail montre 1" />
+                                <img class="flex-1 aspect-square h-32 sm:h-40 md:h-48 lg:h-[308px] object-cover rounded-lg"
+                                    src="images/product/12.jpg" alt="Détail montre 2" />
+                            </div>
+                            <div class="flex gap-4">
+                                <img class="flex-1 aspect-square h-32 sm:h-40 md:h-48 lg:h-[308px] object-cover rounded-lg"
+                                    src="images/product/13.jpg" alt="Détail montre 3" />
+                                <img class="flex-1 aspect-square h-32 sm:h-40 md:h-48 lg:h-[308px] object-cover rounded-lg"
+                                    src="images/product/14.jpg" alt="Détail montre 4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Information Section -->
+                <div class="flex flex-col xl:flex-row gap-8 lg:gap-20">
+                    <!-- Product Details -->
+                    <div class="flex-1">
+                        <h2
+                            class="text-Color-Scheme-1-Text text-2xl sm:text-3xl lg:text-[40px] font-bold font-roboto leading-tight mb-8">
+                            Apple Watch
+                        </h2>
+
+                        <div class="flex flex-col gap-8">
+                            <!-- Description -->
+                            <div class="flex flex-col gap-4">
+                                <p
+                                    class="text-Color-Scheme-1-Text text-xs sm:text-sm font-normal font-montserrat leading-relaxed">
+                                    La Fitbit Charge 6 est une montre fitness haut de gamme conçue pour vous accompagner
+                                    au quotidien dans votre quête de
+                                    bien-être. Élégante, légère et discrète, elle offre un suivi précis de vos activités
+                                    physiques, de votre fréquence
+                                    cardiaque, de votre sommeil et bien plus encore
+                                </p>
+                            </div>
+
+                            <!-- Details Section -->
+                            <div class="flex flex-col gap-6">
+                                <div class="pt-2">
+                                    <div class="inline-flex flex-col gap-2">
+                                        <div
+                                            class="text-Color-Scheme-1-Text text-base font-normal font-roboto leading-normal">
+                                            Détails
+                                        </div>
+                                        <div class="w-full h-px bg-[#f7a98d]"></div>
+                                    </div>
+                                </div>
+
+                                <div class="text-[#a2a2a2] text-xs font-light font-montserrat leading-relaxed">
+                                    <p><strong>Écran :</strong> AMOLED couleur tactile</p>
+                                    <p><strong>Suivi santé :</strong> </p>
+                                    <p>• Fréquence cardiaque en continu</p>
+                                    <p>• Niveau de stress</p>
+                                    <p>• Oxymètre (SpO2)</p>
+                                    <p>• Suivi du sommeil avec phases (léger, profond, paradoxal)</p>
+                                    <p>• Score de récupération</p>
+                                    <p><strong>Activités sportives :</strong></p>
+                                    <p>• +20 modes d’entraînement</p>
+                                    <p>• Détection automatique d’activités</p>
+                                    <p>• GPS intégré</p>
+                                    <p>• GMT-Master II – montre de voyageur</p>
+                                    <p>• Oyster Perpetual – minimalisme sophistiqué</p>
+                                    <p>• Autonomie : Jusqu’à 7 jours</p>
+                                    <p>• Score de récupération</p>
+                                    <p><strong>Connectivité :</strong></p>
+                                    <p>• Notifications d’appels, SMS, WhatsApp</p>
+                                    <p>• Paiement sans contact via Fitbit Pay</p>
+                                    <p>• GPS intégré</p>
+                                    <p>• Score de récupération</p>
+                                    <p><strong>Autres fonctionnalités :</strong></p>
+                                    <p>• Compatible Android & iOS</p>
+                                    <p>• Résistance à l’eau (jusqu’à 50 mètres)</p>
+                                    <p>• Commande YouTube Music depuis l’écran</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Purchase Section -->
+                    <div class="w-full xl:max-w-[400px] flex flex-col gap-6">
+                        <!-- Price -->
+                        <div class="flex flex-col gap-2">
+                            <div
+                                class="text-Color-Scheme-1-Text text-2xl sm:text-3xl font-bold font-roboto leading-tight">
+                                15000XOF
+                            </div>
+                        </div>
+
+                        <!-- Rating -->
+                        <div class="flex items-center gap-2">
+                            <div class="flex gap-1">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.25672 0.934212C7.53172 0.281043 8.46832 0.281044 8.74332 
+                                        0.934214L10.3663 4.78933C10.4823 5.06469 10.7445 5.25284 11.0454
+                                         5.27667L15.2582 5.61033C15.9719 5.66686 16.2614 6.54686 15.7175 7.00707L12.5079 9.72329C12.2786 9.91734 12.1784 10.2218 12.2485 10.5118L13.2291 14.5732C13.3952 15.2613 12.6375 15.8052 12.0264 15.4365L8.41965 13.26C8.16202 13.1045 7.83802 13.1045 7.5804 13.26L3.9736 15.4365C3.3625 15.8052 2.60477 15.2613 2.77091 14.5732L3.75155 10.5118C3.82159 10.2218 3.72147 9.91734 3.49221 9.72329L0.28245 7.00707C-0.261375 6.54686 0.0280544 5.66686 0.741835 5.61033L4.9547 5.27667C5.25561 5.25284 5.51774 5.06469 5.63367 4.78933L7.25672 0.934212Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.25672 0.934212C7.53172 0.281043 8.46832 0.281044 8.74332 
+                                        0.934214L10.3663 4.78933C10.4823 5.06469 10.7445 5.25284 11.0454
+                                         5.27667L15.2582 5.61033C15.9719 5.66686 16.2614 6.54686 15.7175 7.00707L12.5079 9.72329C12.2786 9.91734 12.1784 10.2218 12.2485 10.5118L13.2291 14.5732C13.3952 15.2613 12.6375 15.8052 12.0264 15.4365L8.41965 13.26C8.16202 13.1045 7.83802 13.1045 7.5804 13.26L3.9736 15.4365C3.3625 15.8052 2.60477 15.2613 2.77091 14.5732L3.75155 10.5118C3.82159 10.2218 3.72147 9.91734 3.49221 9.72329L0.28245 7.00707C-0.261375 6.54686 0.0280544 5.66686 0.741835 5.61033L4.9547 5.27667C5.25561 5.25284 5.51774 5.06469 5.63367 4.78933L7.25672 0.934212Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.25672 0.934212C7.53172 0.281043 8.46832 0.281044 8.74332 
+                                        0.934214L10.3663 4.78933C10.4823 5.06469 10.7445 5.25284 11.0454
+                                         5.27667L15.2582 5.61033C15.9719 5.66686 16.2614 6.54686 15.7175 7.00707L12.5079 9.72329C12.2786 9.91734 12.1784 10.2218 12.2485 10.5118L13.2291 14.5732C13.3952 15.2613 12.6375 15.8052 12.0264 15.4365L8.41965 13.26C8.16202 13.1045 7.83802 13.1045 7.5804 13.26L3.9736 15.4365C3.3625 15.8052 2.60477 15.2613 2.77091 14.5732L3.75155 10.5118C3.82159 10.2218 3.72147 9.91734 3.49221 9.72329L0.28245 7.00707C-0.261375 6.54686 0.0280544 5.66686 0.741835 5.61033L4.9547 5.27667C5.25561 5.25284 5.51774 5.06469 5.63367 4.78933L7.25672 0.934212Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.25672 0.934212C7.53172 0.281043 8.46832 0.281044 8.74332 
+                                        0.934214L10.3663 4.78933C10.4823 5.06469 10.7445 5.25284 11.0454
+                                         5.27667L15.2582 5.61033C15.9719 5.66686 16.2614 6.54686 15.7175 7.00707L12.5079 9.72329C12.2786 9.91734 12.1784 10.2218 12.2485 10.5118L13.2291 14.5732C13.3952 15.2613 12.6375 15.8052 12.0264 15.4365L8.41965 13.26C8.16202 13.1045 7.83802 13.1045 7.5804 13.26L3.9736 15.4365C3.3625 15.8052 2.60477 15.2613 2.77091 14.5732L3.75155 10.5118C3.82159 10.2218 3.72147 9.91734 3.49221 9.72329L0.28245 7.00707C-0.261375 6.54686 0.0280544 5.66686 0.741835 5.61033L4.9547 5.27667C5.25561 5.25284 5.51774 5.06469 5.63367 4.78933L7.25672 0.934212Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.9144 6.05599L15.9782 6.25599C16.0307 6.40694 15.9865 6.57471 15.8665 6.67999L11.9892 10L13.138 14.976C13.1769 15.135 13.1172 15.302 12.9864 15.4L12.8109 15.52C12.7427 15.5736 12.6582 15.6018 12.5716 15.6C12.4985 15.6015 12.4266 15.5821 12.3642 15.544L8.00016 12.88L3.66011 15.544C3.59771 15.5821 3.52573 15.6015 3.45267 15.6C3.36607 15.6018 3.28151 15.5736 3.21334 15.52L3.01388 15.4C2.88308 15.302 2.8234 15.135 2.8623 14.976L4.01114 10L0.14179 6.68799C0.0156062 6.58334 -0.0321581 6.41091 0.0221197 6.25599L0.109878 6.05599C0.15654 5.89793 0.296829 5.78603 0.460912 5.77599L5.55888 5.36799L7.5135 0.655991C7.57613 0.499507 7.72831 0.397778 7.89645 0.399991H8.10385C8.27049 0.396446 8.42105 0.49923 8.47881 0.655991L10.4654 5.36799L15.5634 5.77599C15.7275 5.78603 15.8677 5.89793 15.9144 6.05599ZM11.2871 13.248L10.3936 9.504L13.3215 6.99999L9.48409 6.69599L8.00016 3.12799V11.24L11.2871 13.248Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                            </div>
+                            <div class="text-[#a2a2a2] text-xs sm:text-sm font-light font-montserrat">
+                                (4.5 stars) • 10 recommandations
+                            </div>
+                        </div>
+
+                        <!-- Quantity and Actions -->
+                        <div class="flex flex-col gap-6 mt-6">
+                            <!-- Quantity -->
+                            <div class="flex flex-col gap-2">
+                                <div class="text-Color-Scheme-1-Text text-base font-bold font-roboto leading-normal">
+                                    Quantité
+                                </div>
+                                <input type="text" class="w-16 p-3 border border-[#a2a2a2] flex items-center" value="1">
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex flex-col gap-4 pt-2">
+                                <button
+                                    class="w-full px-6 py-3 bg-[#f7a98d] rounded-[13px] flex justify-center items-center transition-colors hover:bg-[#f5967a]">
+                                    <div class="text-white text-base font-normal font-roboto">
+                                        Ajouter au panier
+                                    </div>
+                                </button>
+                                <button
+                                    class="w-full px-6 py-3 rounded-[13px] border border-[#f7a98d] flex justify-center items-center transition-colors hover:bg-[#f7a98d] hover:text-white">
+                                    <div class="text-[#a2a2a2] text-base font-normal font-roboto hover:text-white">
+                                        Acheter maintenant
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section montre sportive -->
+    <section class="bg-white">
+        <!-- Header Section -->
+        <div class="w-full px-4 sm:px-8 md:px-12 lg:px-16 py-16 sm:py-20 md:py-24 lg:py-28">
+            <div class="max-w-screen-xl mx-auto text-center">
+                <h1
+                    class="text-Color-Scheme-1-Text text-2xl sm:text-3xl md:text-4xl lg:text-[39px] font-extrabold font-playfair mb-4">
+                    Montre classique
+                </h1>
+                <div class="max-w-2xl mx-auto text-[#a2a2a2] text-xs sm:text-sm font-light font-montserrat">
+                    Simplicité, tradition et intemporalité – nos montres classiques sont idéales pour sublimer votre
+                    quotidien avec
+                    discrétion
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-full max-w-screen-xl mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
+            <div class="pb-8 flex flex-col gap-12">
+                <!-- Image Gallery Section -->
+                <div class="flex flex-col gap-6">
+                    <!-- Images Grid -->
+                    <div class="flex flex-col lg:flex-row gap-4">
+                        <!-- Main Image -->
+                        <div class="w-full lg:w-1/2">
+                            <img class="w-full h-64 sm:h-80 md:h-96 lg:h-[632px] object-cover rounded-lg"
+                                src="images/product/15.jpg" alt="Montre Rolex principale" />
+                        </div>
+
+                        <!-- Secondary Images Grid -->
+                        <div class="w-full lg:w-1/2 flex flex-col gap-4">
+                            <div class="flex gap-4">
+                                <img class="flex-1 aspect-square h-32 sm:h-40 md:h-48 lg:h-[308px] object-cover rounded-lg"
+                                    src="images/product/16.jpg" alt="Détail montre 1" />
+                                <img class="flex-1 aspect-square h-32 sm:h-40 md:h-48 lg:h-[308px] object-cover rounded-lg"
+                                    src="images/product/17.jpg" alt="Détail montre 2" />
+                            </div>
+                            <div class="flex gap-4">
+                                <img class="flex-1 aspect-square h-32 sm:h-40 md:h-48 lg:h-[308px] object-cover rounded-lg"
+                                    src="images/product/18.jpg" alt="Détail montre 3" />
+                                <img class="flex-1 aspect-square h-32 sm:h-40 md:h-48 lg:h-[308px] object-cover rounded-lg"
+                                    src="images/product/19.jpg" alt="Détail montre 4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Information Section -->
+                <div class="flex flex-col xl:flex-row gap-8 lg:gap-20">
+                    <!-- Product Details -->
+                    <div class="flex-1">
+                        <h2
+                            class="text-Color-Scheme-1-Text text-2xl sm:text-3xl lg:text-[40px] font-bold font-roboto leading-tight mb-8">
+                            Casio
+                        </h2>
+
+                        <div class="flex flex-col gap-8">
+                            <!-- Description -->
+                            <div class="flex flex-col gap-4">
+                                <p
+                                    class="text-Color-Scheme-1-Text text-xs sm:text-sm font-normal font-montserrat leading-relaxed">
+                                    Casio est une marque japonaise emblématique reconnue pour ses montres robustes,
+                                    fonctionnelles et accessibles. Les
+                                    montres Casio combinent design classique et innovation technologique, offrant une
+                                    large gamme de modèles adaptés à
+                                    toutes les occasions, du quotidien aux activités sportives. Connues pour leur
+                                    durabilité et leur précision, les montres
+                                    Casio intègrent souvent des fonctionnalités pratiques comme le chronomètre,
+                                    l’alarme, l’éclairage LED, et parfois même
+                                    la connectivité Bluetooth ou les capteurs environnementaux
+                                </p>
+                            </div>
+
+                            <!-- Details Section -->
+                            <div class="flex flex-col gap-6">
+                                <div class="pt-2">
+                                    <div class="inline-flex flex-col gap-2">
+                                        <div
+                                            class="text-Color-Scheme-1-Text text-base font-normal font-roboto leading-normal">
+                                            Détails
+                                        </div>
+                                        <div class="w-full h-px bg-[#f7a98d]"></div>
+                                    </div>
+                                </div>
+
+                                <div class="text-[#a2a2a2] text-xs font-light font-montserrat leading-relaxed">
+                                    <p><strong>Mouvement :</strong> Quartz (électronique), garantissant précision et
+                                        faible entretien.</p>
+                                    <p><strong>Matériaux du boîtier :</strong> Résine, acier inoxydable ou parfois
+                                        alliages métalliques.</p>
+                                    <p><strong>Bracelet :</strong> Résine, cuir, acier inoxydable selon le modèle.</p>
+                                    <p><strong>Étanchéité :</strong>Généralement entre 50 et 200 mètres, adaptée à la
+                                        natation ou la
+                                        plongée légère selon les modèles.</p>
+                                    <p><strong>Fonctions classiques :</strong> Heure, date, jour de la semaine, alarme,
+                                        chronomètre, compte
+                                        à rebours.</p>
+                                    <p><strong>Éclairage :</strong> LED ou néon pour une bonne lisibilité dans
+                                        l’obscurité.</p>
+                                    <p><strong>Affichage :</strong> Digital, analogique, ou mixte (analogique +
+                                        digital).</p>
+                                    <p><strong>Autonomie :</strong> Pile pouvant durer plusieurs années, certains
+                                        modèles avec énergie
+                                        solaire.</p>
+                                    <p><strong>Dimensions :</strong> Varient selon le modèle, souvent compact et léger
+                                        pour le confort.</p>
+                                    <p><strong>Technologies additionnelles (selon modèle) :</strong>Bluetooth, GPS,
+                                        capteurs (altimètre,
+                                        baromètre, thermomètre), résistance
+                                        aux chocs (ex: gamme G-Shock) </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Purchase Section -->
+                    <div class="w-full xl:max-w-[400px] flex flex-col gap-6">
+                        <!-- Price -->
+                        <div class="flex flex-col gap-2">
+                            <div
+                                class="text-Color-Scheme-1-Text text-2xl sm:text-3xl font-bold font-roboto leading-tight">
+                                15000XOF
+                            </div>
+                        </div>
+
+                        <!-- Rating -->
+                        <div class="flex items-center gap-2">
+                            <div class="flex gap-1">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.25672 0.934212C7.53172 0.281043 8.46832 0.281044 8.74332 
+                                        0.934214L10.3663 4.78933C10.4823 5.06469 10.7445 5.25284 11.0454
+                                         5.27667L15.2582 5.61033C15.9719 5.66686 16.2614 6.54686 15.7175 7.00707L12.5079 9.72329C12.2786 9.91734 12.1784 10.2218 12.2485 10.5118L13.2291 14.5732C13.3952 15.2613 12.6375 15.8052 12.0264 15.4365L8.41965 13.26C8.16202 13.1045 7.83802 13.1045 7.5804 13.26L3.9736 15.4365C3.3625 15.8052 2.60477 15.2613 2.77091 14.5732L3.75155 10.5118C3.82159 10.2218 3.72147 9.91734 3.49221 9.72329L0.28245 7.00707C-0.261375 6.54686 0.0280544 5.66686 0.741835 5.61033L4.9547 5.27667C5.25561 5.25284 5.51774 5.06469 5.63367 4.78933L7.25672 0.934212Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.25672 0.934212C7.53172 0.281043 8.46832 0.281044 8.74332 
+                                        0.934214L10.3663 4.78933C10.4823 5.06469 10.7445 5.25284 11.0454
+                                         5.27667L15.2582 5.61033C15.9719 5.66686 16.2614 6.54686 15.7175 7.00707L12.5079 9.72329C12.2786 9.91734 12.1784 10.2218 12.2485 10.5118L13.2291 14.5732C13.3952 15.2613 12.6375 15.8052 12.0264 15.4365L8.41965 13.26C8.16202 13.1045 7.83802 13.1045 7.5804 13.26L3.9736 15.4365C3.3625 15.8052 2.60477 15.2613 2.77091 14.5732L3.75155 10.5118C3.82159 10.2218 3.72147 9.91734 3.49221 9.72329L0.28245 7.00707C-0.261375 6.54686 0.0280544 5.66686 0.741835 5.61033L4.9547 5.27667C5.25561 5.25284 5.51774 5.06469 5.63367 4.78933L7.25672 0.934212Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.25672 0.934212C7.53172 0.281043 8.46832 0.281044 8.74332 
+                                        0.934214L10.3663 4.78933C10.4823 5.06469 10.7445 5.25284 11.0454
+                                         5.27667L15.2582 5.61033C15.9719 5.66686 16.2614 6.54686 15.7175 7.00707L12.5079 9.72329C12.2786 9.91734 12.1784 10.2218 12.2485 10.5118L13.2291 14.5732C13.3952 15.2613 12.6375 15.8052 12.0264 15.4365L8.41965 13.26C8.16202 13.1045 7.83802 13.1045 7.5804 13.26L3.9736 15.4365C3.3625 15.8052 2.60477 15.2613 2.77091 14.5732L3.75155 10.5118C3.82159 10.2218 3.72147 9.91734 3.49221 9.72329L0.28245 7.00707C-0.261375 6.54686 0.0280544 5.66686 0.741835 5.61033L4.9547 5.27667C5.25561 5.25284 5.51774 5.06469 5.63367 4.78933L7.25672 0.934212Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.25672 0.934212C7.53172 0.281043 8.46832 0.281044 8.74332 
+                                        0.934214L10.3663 4.78933C10.4823 5.06469 10.7445 5.25284 11.0454
+                                         5.27667L15.2582 5.61033C15.9719 5.66686 16.2614 6.54686 15.7175 7.00707L12.5079 9.72329C12.2786 9.91734 12.1784 10.2218 12.2485 10.5118L13.2291 14.5732C13.3952 15.2613 12.6375 15.8052 12.0264 15.4365L8.41965 13.26C8.16202 13.1045 7.83802 13.1045 7.5804 13.26L3.9736 15.4365C3.3625 15.8052 2.60477 15.2613 2.77091 14.5732L3.75155 10.5118C3.82159 10.2218 3.72147 9.91734 3.49221 9.72329L0.28245 7.00707C-0.261375 6.54686 0.0280544 5.66686 0.741835 5.61033L4.9547 5.27667C5.25561 5.25284 5.51774 5.06469 5.63367 4.78933L7.25672 0.934212Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M15.9144 6.05599L15.9782 6.25599C16.0307 6.40694 15.9865 6.57471 15.8665 6.67999L11.9892 10L13.138 14.976C13.1769 15.135 13.1172 15.302 12.9864 15.4L12.8109 15.52C12.7427 15.5736 12.6582 15.6018 12.5716 15.6C12.4985 15.6015 12.4266 15.5821 12.3642 15.544L8.00016 12.88L3.66011 15.544C3.59771 15.5821 3.52573 15.6015 3.45267 15.6C3.36607 15.6018 3.28151 15.5736 3.21334 15.52L3.01388 15.4C2.88308 15.302 2.8234 15.135 2.8623 14.976L4.01114 10L0.14179 6.68799C0.0156062 6.58334 -0.0321581 6.41091 0.0221197 6.25599L0.109878 6.05599C0.15654 5.89793 0.296829 5.78603 0.460912 5.77599L5.55888 5.36799L7.5135 0.655991C7.57613 0.499507 7.72831 0.397778 7.89645 0.399991H8.10385C8.27049 0.396446 8.42105 0.49923 8.47881 0.655991L10.4654 5.36799L15.5634 5.77599C15.7275 5.78603 15.8677 5.89793 15.9144 6.05599ZM11.2871 13.248L10.3936 9.504L13.3215 6.99999L9.48409 6.69599L8.00016 3.12799V11.24L11.2871 13.248Z"
+                                        fill="#E4AC44" />
+                                </svg>
+                            </div>
+                            <div class="text-[#a2a2a2] text-xs sm:text-sm font-light font-montserrat">
+                                (4.5 stars) • 10 recommandations
+                            </div>
+                        </div>
+
+                        <!-- Quantity and Actions -->
+                        <div class="flex flex-col gap-6 mt-6">
+                            <!-- Quantity -->
+                            <div class="flex flex-col gap-2">
+                                <div class="text-Color-Scheme-1-Text text-base font-bold font-roboto leading-normal">
+                                    Quantité
+                                </div>
+                                <input type="text" class="w-16 p-3 border border-[#a2a2a2] flex items-center" value="1">
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="flex flex-col gap-4 pt-2">
+                                <button
+                                    class="w-full px-6 py-3 bg-[#f7a98d] rounded-[13px] flex justify-center items-center transition-colors hover:bg-[#f5967a]">
+                                    <div class="text-white text-base font-normal font-roboto">
+                                        Ajouter au panier
+                                    </div>
+                                </button>
+                                <button
+                                    class="w-full px-6 py-3 rounded-[13px] border border-[#f7a98d] flex justify-center items-center transition-colors hover:bg-[#f7a98d] hover:text-white">
+                                    <div class="text-[#a2a2a2] text-base font-normal font-roboto hover:text-white">
+                                        Acheter maintenant
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Footer Section -->

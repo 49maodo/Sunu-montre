@@ -1,5 +1,82 @@
+// // Initialize Lucide icons
+// lucide.createIcons();
+
+// // Mobile menu toggle function
+// function toggleMobileMenu() {
+//     const mobileMenu = document.getElementById('mobile-menu');
+//     const menuIcon = document.getElementById('menu-icon');
+//     const closeIcon = document.getElementById('close-icon');
+
+//     mobileMenu.classList.toggle('active');
+//     menuIcon.classList.toggle('hidden');
+//     closeIcon.classList.toggle('hidden');
+// }
+
+// // Close mobile menu when clicking on a link
+// document.querySelectorAll('#mobile-menu a').forEach(link => {
+//     link.addEventListener('click', () => {
+//         toggleMobileMenu();
+//     });
+// });
+
+// // Close mobile menu when clicking outside
+// document.addEventListener('click', (e) => {
+//     const mobileMenu = document.getElementById('mobile-menu');
+//     const menuButton = document.querySelector('[onclick="toggleMobileMenu()"]');
+
+//     if (!mobileMenu.contains(e.target) && !menuButton.contains(e.target)) {
+//         if (mobileMenu.classList.contains('active')) {
+//             toggleMobileMenu();
+//         }
+//     }
+// });
 // Initialize Lucide icons
 lucide.createIcons();
+
+// Page activation management
+function setActivePage() {
+    const currentPath = window.location.pathname;
+    const currentPage = currentPath.split('/').pop() || 'index.html';
+
+    // Mapping des pages
+    const pageMap = {
+        '': 'index.html',
+        'index.html': 'index.html',
+        'products.html': 'products.html',
+        'about.html': 'about.html',
+        'contact.html': 'contact.html'
+    };
+
+    // Déterminer la page active
+    const activePage = pageMap[currentPage] || 'index.html';
+
+    // Supprimer toutes les classes actives existantes
+    document.querySelectorAll('nav a').forEach(link => {
+        link.classList.remove('active');
+        link.classList.remove('text-saumon-100');
+        link.classList.add('text-blue-dark0');
+    });
+
+    // Ajouter la classe active à la page courante
+    const activeLinks = document.querySelectorAll(`a[href="${activePage}"], a[href="/${activePage}"]`);
+    activeLinks.forEach(link => {
+        link.classList.add('active');
+        link.classList.remove('text-blue-dark0');
+        link.classList.add('text-saumon-100');
+        link.style.fontWeight = '600'; // Rendre le texte plus bold
+    });
+
+    // Cas spécial pour la racine (/) qui doit activer l'accueil
+    if (currentPath === '/' || currentPath === '') {
+        const homeLinks = document.querySelectorAll('a[href="index.html"], a[href="/"]');
+        homeLinks.forEach(link => {
+            link.classList.add('active');
+            link.classList.remove('text-blue-dark0');
+            link.classList.add('text-saumon-100');
+            link.style.fontWeight = '600';
+        });
+    }
+}
 
 // Mobile menu toggle function
 function toggleMobileMenu() {
@@ -30,6 +107,67 @@ document.addEventListener('click', (e) => {
         }
     }
 });
+
+// Navigation avec gestion d'état
+function navigateTo(page) {
+    // Optionnel : Vous pouvez ajouter des animations de transition ici
+    window.location.href = page;
+}
+
+// Ajouter des event listeners pour la navigation
+document.addEventListener('DOMContentLoaded', function () {
+    // Activer la page courante au chargement
+    setActivePage();
+
+    // Ajouter des event listeners aux liens de navigation
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function (e) {
+            // Optionnel : Ajouter une classe de transition
+            this.style.transition = 'all 0.3s ease';
+        });
+    });
+});
+
+// Gestion des styles hover avec état actif
+function addHoverEffects() {
+    const navLinks = document.querySelectorAll('nav a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('mouseenter', function () {
+            if (!this.classList.contains('active')) {
+                this.style.transform = 'translateY(-1px)';
+                this.style.transition = 'all 0.2s ease';
+            }
+        });
+
+        link.addEventListener('mouseleave', function () {
+            if (!this.classList.contains('active')) {
+                this.style.transform = 'translateY(0)';
+            }
+        });
+    });
+}
+
+// Initialiser les effets hover
+document.addEventListener('DOMContentLoaded', addHoverEffects);
+
+// Fonction utilitaire pour forcer l'activation d'une page (pour usage manuel)
+function forceActivePage(pageName) {
+    // Supprimer toutes les classes actives
+    document.querySelectorAll('nav a').forEach(link => {
+        link.classList.remove('active', 'text-saumon-100');
+        link.classList.add('text-blue-dark0');
+        link.style.fontWeight = 'normal';
+    });
+
+    // Activer la page spécifiée
+    const targetLinks = document.querySelectorAll(`a[href="${pageName}"], a[href="/${pageName}"]`);
+    targetLinks.forEach(link => {
+        link.classList.add('active', 'text-saumon-100');
+        link.classList.remove('text-blue-dark0');
+        link.style.fontWeight = '600';
+    });
+}
 
 // carrousel functionality
 

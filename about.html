@@ -15,7 +15,7 @@
 
 <body class="bg-white">
     <!-- Navbar Section -->
-    <header class="w-full bg-blue-dark400">
+    <header class="w-full bg-blue-dark400 bg-blue-dark400 fixed top-0 right-0 left-0 z-50 shadow-lg">
         <div class="container mx-auto flex items-center justify-between py-4 lg:py-7  lg:px-12">
             <!-- Logo -->
             <img class="w-16 h-9 lg:w-[107px] lg:h-[60px] object-cover" alt="Univers des Montres"
@@ -105,9 +105,10 @@
     </header>
 
     <!-- Hero Section -->
-    <section
-        class="relative w-full h-[60vh] sm:h-[70vh] lg:h-[920px] flex flex-col items-center justify-center gap-8 lg:gap-20 px-4 sm:px-8 lg:px-16 py-0 bg-[url(/images/about/1.jpg)] bg-cover bg-center">
-        <div class="flex flex-col max-w-screen-xl items-center gap-8 lg:gap-20 relative w-full">
+    <section class="relative w-full h-[60vh] sm:h-[70vh] lg:h-[920px] flex flex-col items-center 
+        justify-center gap-8 lg:gap-20 px-4 sm:px-8 lg:px-16 py-0 bg-[url(/images/about/1.jpg)] bg-cover bg-center ">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="flex flex-col max-w-screen-xl items-center gap-8 lg:gap-20 relative w-full ">
             <div class="flex flex-col max-w-screen-md items-center w-full gap-6 lg:gap-8">
                 <div class="flex flex-col items-start gap-4 lg:gap-6 self-stretch w-full">
                     <h1
@@ -135,7 +136,7 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="w-full bg-saumon-50 py-16 lg:py-28 relative">
+    <section class="w-full bg-saumon-50 py-16 lg:py-28 relative ">
         <div class="container mx-auto px-4 sm:px-8 lg:px-16">
             <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
                 <div class="w-full lg:flex-1 order-2 lg:order-1">
